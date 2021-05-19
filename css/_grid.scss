@@ -1,7 +1,7 @@
-$xs: #{"(max-width: 767px)"};
-$s: #{"(min-width: 768px) and (max-width: 1000px)"};
-$sm: #{"(min-width: 1001px) and (max-width: 1025px)"};
-$m: #{"(min-width: 1025px)"};
+$s: #{"(max-width: 767px)"};
+$m: #{"(min-width: 768px) and (max-width: 1000px)"};
+$l: #{"(min-width: 1001px) and (max-width: 1025px)"};
+$xl: #{"(min-width: 1025px)"};
 
 $grid-count: 12;
 $grid-padding: 15px;
@@ -21,7 +21,6 @@ $grid-prefix: xs s sm m;
 }
 
 // ****** for css ******************
-
 .row {
   display: -webkit-box;
   display: flex;
@@ -30,7 +29,7 @@ $grid-prefix: xs s sm m;
   margin-right: -$grid-padding;
 }
 
-[class*="#{$col-name}-"] {
+[class*="#{$col-name}_"] {
   flex: none;
   min-height: 1px;
   flex-grow: 0;
@@ -41,9 +40,8 @@ $grid-prefix: xs s sm m;
 }
 
 // finish grid ----------------------
-
 @for $i from 1 through $grid-count {
-  .#{$col-name}-#{$i} {
+  .#{$col-name}_#{$i} {
     min-width: $i * (100% / $grid-count);
     max-width: $i * (100% / $grid-count);
     flex-basis: $i * (100% / $grid-count);
@@ -51,34 +49,41 @@ $grid-prefix: xs s sm m;
 }
 
 // Media
-
-@mixin make-grid($size) {
-  .#{$size}-hide {
+@mixin make_grid($size) {
+  .#{$size}_hide {
     display: none !important;
   }
-  .#{$size}-show {
+  .#{$size}_show {
     display: flex !important;
     flex-direction: column;
   }
-  .#{$size}-show_b {
+  .#{$size}_show_b {
     display: block !important;
   }
-  .col-#{$size}-auto {
+  .col_#{$size}_auto {
     flex: 0 0 auto;
     width: auto;
     min-width: 0;
     max-width: 100%;
   }
-  .col-#{$size} {
+  .col_#{$size} {
     @include col;
   }
 }
 
-@media #{$xs} {
-  @include make-grid(xs);
-  $col-name: col-xs;
+@mixin offset($size) {
   @for $i from 1 through $grid-count {
-    .#{$col-name}-#{$i} {
+    .#{$size}_offset_#{$i} {
+      margin-left: calc(
+        (#{$i} * (100% / #{$grid-count})) + (#{$grid-padding} * (#{$i} - 1))
+      );
+    }
+  }
+}
+
+@mixin col_size($size) {
+  @for $i from 1 through $grid-count {
+    .col_#{$size}_#{$i} {
       min-width: $i * (100% / $grid-count);
       max-width: $i * (100% / $grid-count);
       flex-basis: $i * (100% / $grid-count);
@@ -87,37 +92,25 @@ $grid-prefix: xs s sm m;
 }
 
 @media #{$s} {
-  @include make-grid(s);
-  $col-name: col-s;
-  @for $i from 1 through $grid-count {
-    .#{$col-name}-#{$i} {
-      min-width: $i * (100% / $grid-count);
-      max-width: $i * (100% / $grid-count);
-      flex-basis: $i * (100% / $grid-count);
-    }
-  }
-}
-
-@media #{$sm} {
-  @include make-grid(sm);
-  $col-name: col-sm;
-  @for $i from 1 through $grid-count {
-    .#{$col-name}-#{$i} {
-      min-width: $i * (100% / $grid-count);
-      max-width: $i * (100% / $grid-count);
-      flex-basis: $i * (100% / $grid-count);
-    }
-  }
+  @include make_grid(s);
+  @include offset(s);
+  @include col_size(s);
 }
 
 @media #{$m} {
-  @include make-grid(m);
-  $col-name: col-m;
-  @for $i from 1 through $grid-count {
-    .#{$col-name}-#{$i} {
-      min-width: $i * (100% / $grid-count);
-      max-width: $i * (100% / $grid-count);
-      flex-basis: $i * (100% / $grid-count);
-    }
-  }
+  @include make_grid(m);
+  @include offset(m);
+  @include col_size(m);
+}
+
+@media #{$l} {
+  @include make_grid(l);
+  @include offset(l);
+  @include col_size(l);
+}
+
+@media #{$xl} {
+  @include make_grid(xl);
+  @include offset(xl);
+  @include col_size(xl);
 }
