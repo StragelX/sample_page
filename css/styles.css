@@ -1310,6 +1310,30 @@ header .menu a {
   text-transform: uppercase;
 }
 
+header .menu a::before, header .menu a:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  background-color: #f9a46a;
+  opacity: 0;
+  transition: opacity 180ms;
+}
+
+header .menu a::before {
+  top: -5px;
+}
+
+header .menu a:after {
+  bottom: -5px;
+}
+
+header .menu a:hover::before, header .menu a:hover:after {
+  opacity: 1;
+  transition: opacity 180ms;
+}
+
 header .menu a + a {
   margin-left: 50px;
 }
