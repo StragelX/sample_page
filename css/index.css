@@ -968,7 +968,8 @@
 }
 
 #interesting_facts .interesting_carousel .one_slied {
-  padding: 20px;
+  padding: 30px;
+  display: block;
   transform: scale(1);
   transition: transform 360ms;
 }
@@ -1001,8 +1002,8 @@
 
 #interesting_facts .interesting_carousel .label {
   position: absolute;
-  top: 240px;
-  left: 205px;
+  top: 235px;
+  left: 235px;
   width: 210px;
   height: 52px;
   border-radius: 0 50px 50px 0;
