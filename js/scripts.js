@@ -9,9 +9,9 @@ $( document ).ready(function() {
         $(this).closest('.cookies_wrap').removeClass('active');
     })
 
-    if($('.counter-number').length){
-        $('.counter-number').appear(function () {
-            $('.counter-number').countTo();
+    if($('.counter_number').length){
+        $('.counter_number').appear(function () {
+            $('.counter_number').countTo();
         });
     }
 
@@ -33,5 +33,65 @@ $( document ).ready(function() {
         $(this).closest('.modal').removeClass('active');
         $('body').removeClass('no_scroll');
     });
-    
+
+    if ( $('.main_top_carousel.owl-carousel') ) {
+        $(".main_top_carousel.owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            dots: true,
+            autoplay: true,
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
+
+    if ( $('.with_low_carousel.owl-carousel') ) {
+        $(".with_low_carousel.owl-carousel").owlCarousel({
+            items: 4,
+            margin: 10,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: false,
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
+
+    if ( $('.interesting_carousel.owl-carousel') ) {
+        $(".interesting_carousel.owl-carousel").owlCarousel({
+            items: 3.5,
+            margin: 25,
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: false,
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
+
+    // interesting_carouserl
 });

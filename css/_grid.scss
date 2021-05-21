@@ -27,6 +27,11 @@ $grid-prefix: xs s sm m;
   flex-wrap: wrap;
   margin-left: -$grid-padding;
   margin-right: -$grid-padding;
+
+  &.no_margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 [class*="#{$col-name}_"] {
@@ -37,6 +42,19 @@ $grid-prefix: xs s sm m;
   padding-left: $grid-padding;
   padding-right: $grid-padding;
   box-sizing: border-box;
+
+  &.no_padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.no_padding_left {
+    padding-left: 0;
+  }
+
+  &.no_padding_right {
+    padding-right: 0;
+  }
 }
 
 // finish grid ----------------------

@@ -48,6 +48,11 @@
   margin-right: -15px;
 }
 
+.row.no_margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 [class*="col_"] {
   flex: none;
   min-height: 1px;
@@ -56,6 +61,19 @@
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
+}
+
+[class*="col_"].no_padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+[class*="col_"].no_padding_left {
+  padding-left: 0;
+}
+
+[class*="col_"].no_padding_right {
+  padding-right: 0;
 }
 
 .col_1 {
@@ -1113,18 +1131,21 @@ h2 {
   font-family: "Roboto Slab";
   font-weight: 500;
   font-size: 50px;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Roboto Slab";
   font-weight: 500;
   font-size: 35px;
+  text-transform: uppercase;
 }
 
 h4 {
   font-family: "Roboto Slab";
   font-weight: 500;
   font-size: 25px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -1344,6 +1365,7 @@ main {
 }
 
 footer {
+  z-index: 10;
   padding-top: 57px;
   box-shadow: 0 -3px 24px rgba(0, 0, 0, 0.27);
   border: 1px solid rgba(0, 0, 0, 0);
@@ -1533,7 +1555,7 @@ footer .bottom a + a {
 
 .order_product {
   right: 0;
-  bottom: 150px;
+  bottom: 75px;
   z-index: 20;
   position: fixed;
   width: 368px;
@@ -1658,6 +1680,10 @@ footer .bottom a + a {
   margin-bottom: 35px;
 }
 
+.modal_overlay .modal#video_modal {
+  width: auto;
+}
+
 .modal_overlay .close {
   position: absolute;
   right: 0;
@@ -1681,8 +1707,33 @@ footer .bottom a + a {
   background-size: 200px auto, 200px auto;
 }
 
-#main_top {
-  height: 100vh;
-  max-height: 1080px;
+.two_horizontal_lines::before, .two_horizontal_lines::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: url("../img/button_line.svg") no-repeat center/100% auto;
+}
+
+.two_horizontal_lines::before {
+  top: -10px;
+}
+
+.two_horizontal_lines::after {
+  bottom: -10px;
+}
+
+.text {
+  color: #1f1e1c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.7px;
+  line-height: 27px;
+  text-align: left;
+  letter-spacing: normal;
+  line-height: normal;
 }
 /*# sourceMappingURL=styles.css.map */
