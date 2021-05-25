@@ -1,0 +1,56 @@
+.article .tail {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  border-radius: 0 50px 50px 0;
+  padding: 10px 30px 10px 20px;
+  background-color: #1f1e1c;
+  display: flex;
+  align-items: center;
+}
+
+.article .tail:before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.36);
+  margin-right: 10px;
+  border-radius: 50%;
+  background: url("../img/production_icon.svg") no-repeat center/contain;
+}
+
+.article .tail p {
+  color: #f9a46a;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.article .tail p span {
+  display: block;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+}
+
+.article .inner {
+  padding-top: 200px;
+}
+
+.article .inner h4 {
+  color: #f9a46a;
+  font-family: "Roboto Slab";
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=blog.css.map */

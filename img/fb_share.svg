@@ -1,0 +1,13 @@
+<svg id="Facebook" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <rect id="Rectangle_968" data-name="Rectangle 968" width="36" height="36" transform="translate(5 5)" fill="none"/>
+  <g id="Ellipse_427" data-name="Ellipse 427" fill="none" stroke="#b41f28" stroke-width="1.5">
+    <circle cx="23" cy="23" r="23" stroke="none"/>
+    <circle cx="23" cy="23" r="22.25" fill="none"/>
+  </g>
+  <g id="Group_7722" data-name="Group 7722">
+    <g id="Group_2284" data-name="Group 2284" transform="translate(17.798 13.198)">
+      <path id="Path_3068" data-name="Path 3068" d="M22.836,29.7H18.253V21.062H15.989V16.687H18.3l.106-2.433A4.43,4.43,0,0,1,22.847,10h.061l3.354.045-.1,4.3H23.3a.464.464,0,0,0-.464.464v1.881h3.426l-.336,4.375H22.836ZM19.459,28.49H21.63V19.856h3.178l.15-1.963H21.63V14.806a1.671,1.671,0,0,1,1.669-1.67h1.686l.043-1.9-2.137-.028h-.044a3.228,3.228,0,0,0-3.24,3.1l-.158,3.586H17.2v1.963h2.264Z" transform="translate(-15.989 -10)" fill="#b41f28" stroke="#b41f28" stroke-width="0.25"/>
+    </g>
+    <rect id="Rectangle_2157" data-name="Rectangle 2157" width="28" height="28" transform="translate(9 9)" fill="none"/>
+  </g>
+</svg>
