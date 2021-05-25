@@ -93,5 +93,23 @@ $( document ).ready(function() {
         });
     }
 
-    // interesting_carouserl
+    if ( $('.partners.owl-carousel') ) {
+        $(".partners.owl-carousel").owlCarousel({
+            items: 4,
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            navText: ['', ''],
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
 });
