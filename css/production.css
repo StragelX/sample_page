@@ -114,6 +114,78 @@
   height: 630px;
 }
 
+#shops .shops_list {
+  background-color: #1f1e1c;
+  height: 630px;
+  padding-top: 30px;
+}
+
+#shops .shops_list .shop_group {
+  padding: 20px 80px 20px 60px;
+  overflow: hidden;
+}
+
+#shops .shops_list .shop_group .top_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #f9a46a;
+  font-family: "Roboto Slab";
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+#shops .shops_list .shop_group .top_line:after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url("../img/arrow.svg") no-repeat center/contain;
+  transform: rotate(90deg);
+  transition: transform 180ms;
+  margin-top: 3px;
+}
+
+#shops .shops_list .shop_group .list {
+  padding-top: 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 360ms;
+}
+
+#shops .shops_list .shop_group .line {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+#shops .shops_list .shop_group .line img {
+  margin-right: 30px;
+}
+
+#shops .shops_list .shop_group.active .top_line:after {
+  transform: rotate(-90deg);
+  transition: transform 180ms;
+}
+
+#shops .shops_list .shop_group.active .list {
+  max-height: 1000px;
+  transition: max-height 360ms;
+}
+
+#shops .shops_list .shop_group + .shop_group {
+  border-top: 1px solid #353432;
+}
+
 #our_sales {
   padding-top: 150px;
   padding-bottom: 150px;
