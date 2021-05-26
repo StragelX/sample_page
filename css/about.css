@@ -21,26 +21,6 @@
   opacity: 0.7;
 }
 
-#about_top .play #Path_14467 {
-  fill: #de8e51;
-  transition: fill 180ms;
-}
-
-#about_top .play #Ellipse_427 {
-  stroke: #de8e51;
-  transition: stroke 180ms;
-}
-
-#about_top .play:hover #Path_14467 {
-  fill: #b41f28;
-  transition: fill 180ms;
-}
-
-#about_top .play:hover #Ellipse_427 {
-  stroke: #b41f28;
-  transition: stroke 180ms;
-}
-
 #about_top .top_info {
   position: absolute;
   left: 0;

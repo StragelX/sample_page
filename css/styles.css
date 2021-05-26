@@ -1370,6 +1370,40 @@ h4 {
   transition: background-color 360ms, color 360ms;
 }
 
+.fixed_left.fixed {
+  position: fixed;
+  margin-top: -60px;
+}
+
+.play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.play #Path_14467 {
+  fill: #de8e51;
+  transition: fill 180ms;
+}
+
+.play #Ellipse_427 {
+  stroke: #de8e51;
+  transition: stroke 180ms;
+}
+
+.play:hover #Path_14467 {
+  fill: #b41f28;
+  transition: fill 180ms;
+}
+
+.play:hover #Ellipse_427 {
+  stroke: #b41f28;
+  transition: stroke 180ms;
+}
+
 header {
   z-index: 10;
   height: 107px;
@@ -2743,40 +2777,6 @@ footer .bottom a + a {
   z-index: 1;
 }
 
-#policy .inner .big .play,
-.article .inner .big .play {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-#policy .inner .big .play #Path_14467,
-.article .inner .big .play #Path_14467 {
-  fill: #de8e51;
-  transition: fill 180ms;
-}
-
-#policy .inner .big .play #Ellipse_427,
-.article .inner .big .play #Ellipse_427 {
-  stroke: #de8e51;
-  transition: stroke 180ms;
-}
-
-#policy .inner .big .play:hover #Path_14467,
-.article .inner .big .play:hover #Path_14467 {
-  fill: #b41f28;
-  transition: fill 180ms;
-}
-
-#policy .inner .big .play:hover #Ellipse_427,
-.article .inner .big .play:hover #Ellipse_427 {
-  stroke: #b41f28;
-  transition: stroke 180ms;
-}
-
 #policy .inner i,
 .article .inner i {
   cursor: default;
@@ -2896,5 +2896,32 @@ footer .bottom a + a {
   margin-right: 30px;
   display: block;
   background: url("../img/small_logo.png") no-repeat center/contain;
+}
+
+#error_404 {
+  height: 100vh;
+  max-height: 1080px;
+  background: #2d2c2c url("../img/eror_bg.svg") no-repeat top 16% center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#error_404 .icons {
+  margin-bottom: 15px;
+}
+
+#error_404 h2 {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#error_404 .text {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  margin-bottom: 55px;
 }
 /*# sourceMappingURL=styles.css.map */

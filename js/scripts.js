@@ -194,9 +194,17 @@ $( document ).ready(function() {
             });
     }
 
-    // if ( $('.custom_scroll_bar') ) {
-    //     new SimpleBar(document.getElementsByClassName('custom_scroll_bar'));
-    // }
+    if ( $('.fixed_left') ) {
+        $(window).scroll(function(){
+            var $menu_pos = $('.fixed_left').offset().Top;
+            console.log($(this).scrollTop())
+           if($(this).scrollTop() >= 100){
+               $('.fixed_left').addClass('fixed');
+           }else{
+               $('.fixed_left').removeClass('fixed');
+           };
+        });
+    }
 
     $('.shop_group .top_line').click(function(){
         $(this).closest('.shop_group').toggleClass('active');
@@ -303,6 +311,27 @@ $( document ).ready(function() {
             nav: true,
             dots: false,
             autoplay: false,
+            navText: ['', ''],
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
+
+    if ( $('.production_carousel.owl-carousel') ) {
+        $(".production_carousel.owl-carousel").owlCarousel({
+            items: 1.2,
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: false,
+            margin: 100,
             navText: ['', ''],
 
             responsive:{

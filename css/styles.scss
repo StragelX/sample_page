@@ -134,6 +134,44 @@ h4 {
   }
 }
 
+.fixed_left {
+  &.fixed {
+    position: fixed;
+    margin-top: -60px;
+  }
+}
+
+.play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  #Path_14467 {
+    fill: #de8e51;
+    transition: fill 180ms;
+  }
+
+  #Ellipse_427 {
+    stroke: #de8e51;
+    transition: stroke 180ms;
+  }
+
+  &:hover {
+    #Path_14467 {
+      fill: $rad;
+      transition: fill 180ms;
+    }
+
+    #Ellipse_427 {
+      stroke: $rad;
+      transition: stroke 180ms;
+    }
+  }
+}
+
 header {
   z-index: 10;
   height: 107px;
@@ -1533,37 +1571,6 @@ footer {
           z-index: 1;
         }
       }
-
-      .play {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-
-        #Path_14467 {
-          fill: #de8e51;
-          transition: fill 180ms;
-        }
-
-        #Ellipse_427 {
-          stroke: #de8e51;
-          transition: stroke 180ms;
-        }
-
-        &:hover {
-          #Path_14467 {
-            fill: $rad;
-            transition: fill 180ms;
-          }
-
-          #Ellipse_427 {
-            stroke: $rad;
-            transition: stroke 180ms;
-          }
-        }
-      }
     }
 
     i {
@@ -1678,5 +1685,32 @@ footer {
         background: url("../img/small_logo.png") no-repeat center / contain;
       }
     }
+  }
+}
+
+#error_404 {
+  height: 100vh;
+  max-height: 1080px;
+  background: #2d2c2c url("../img/eror_bg.svg") no-repeat top 16% center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .icons {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    margin-bottom: 55px;
   }
 }
