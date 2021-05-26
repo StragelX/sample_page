@@ -1983,6 +1983,10 @@ footer .bottom a + a {
   color: #ffffff;
 }
 
+#interesting_facts h2.article_head {
+  width: 445px;
+}
+
 #interesting_facts .link {
   color: #ffffff;
   font-family: "Roboto Slab";

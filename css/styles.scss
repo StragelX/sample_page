@@ -787,6 +787,10 @@ footer {
     width: 320px;
     margin-bottom: 37px;
     color: #ffffff;
+
+    &.article_head {
+      width: 445px;
+    }
   }
 
   .link {
