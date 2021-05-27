@@ -215,44 +215,4 @@
   opacity: 0.7;
   transition: opacity 180ms;
 }
-
-#blog .pagination {
-  margin-top: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#blog .pagination .arrow {
-  width: 26px;
-  height: 26px;
-  background: url("../img/arrow.svg") no-repeat center/contain;
-}
-
-#blog .pagination .arrow.prew {
-  margin-right: 60px;
-}
-
-#blog .pagination .arrow.next {
-  margin-left: 60px;
-  transform: rotate(180deg);
-}
-
-#blog .pagination .page {
-  color: #1f1e1c;
-  font-family: "Roboto Slab";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-left: 13px;
-  margin-right: 13px;
-  transition: color 180ms;
-  padding: 10px;
-}
-
-#blog .pagination .page.active, #blog .pagination .page:hover {
-  color: #f9a46a;
-  transition: color 180ms;
-}
 /*# sourceMappingURL=blog.css.map */
