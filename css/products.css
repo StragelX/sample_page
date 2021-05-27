@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #products_top .products_list {
   width: 100%;
   width: 275px;
@@ -99,6 +100,17 @@
   z-index: 1;
 }
 
+#products_top .one_product .img_wrap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #211812;
+  opacity: 0.32;
+}
+
 #products_top .one_product .bottom {
   width: 279px;
   height: 60px;
@@ -190,5 +202,241 @@
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 15px;
+}
+
+#product_top .img_wrap {
+  margin-top: 100px;
+  height: 668px;
+}
+
+#product_top .prod_top_info_wrap {
+  padding-top: 190px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  float: right;
+}
+
+#product_top .prod_top_info_wrap h1 {
+  color: #de8e51;
+  font-family: "Roboto Slab";
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: 382px;
+  margin-bottom: 10px;
+}
+
+#product_top .prod_top_info_wrap .icons {
+  width: 94px;
+}
+
+#product_top .prod_top_info_wrap .fasuvannya {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#product_top .prod_top_info_wrap .fasuvannya::before {
+  content: "Фасування:";
+  display: block;
+  margin-bottom: 10px;
+  color: #f9a46a;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+#product_top .prod_top_info_wrap .fasuvannya span {
+  color: #1f1e1c;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+#product_top .prod_top_info_wrap .fasuvannya span + span {
+  margin-left: 15px;
+}
+
+#product_top .prod_top_info_wrap .fasuvannya span + span::before {
+  content: "";
+  display: inline-block;
+  vertical-align: -2px;
+  width: 5px;
+  height: 15px;
+  background: url("../img/divider.svg") no-repeat center/contain;
+  margin-right: 15px;
+}
+
+#product_top .prod_top_info_wrap .sklad::before {
+  content: "Склад:";
+  display: block;
+  margin-bottom: 10px;
+  color: #f9a46a;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+#product_top .product_description {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-right: 100px;
+  margin-top: -70px;
+  background-color: #b41f28;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#product_top .product_description:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  z-index: 0;
+  background-position: -8px 0;
+  background-size: 15px 100%;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(135deg, transparent 66%, #b41f28 67%), linear-gradient(45deg, #b41f28 33%, transparent 34%, transparent 44%);
+}
+
+#product_top .line {
+  float: right;
+  width: 70%;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+#product_top .line + .line {
+  padding-top: 20px;
+  border-top: 2px dotted #f9a46a;
+}
+
+#product_top .line span {
+  width: 300px;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+#product_top .line p {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  line-height: 27px;
+}
+
+#interesting_facts .under_color {
+  height: 350px;
+}
+
+#what_to_buy {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+#what_to_buy h2 {
+  color: #1f1e1c;
+  margin-bottom: 58px;
+  width: 329px;
+}
+
+#what_to_buy .one_recipre {
+  height: 279px;
+  display: block;
+}
+
+#what_to_buy .one_recipre .img_wrap {
+  height: 100%;
+}
+
+#what_to_buy .one_recipre .img_wrap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #211812;
+  opacity: 0.32;
+}
+
+#what_to_buy .one_recipre .bottom {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #3b3a3c;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#what_to_buy .one_recipre .bottom:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  z-index: 0;
+  background-position: -8px 0;
+  background-size: 15px 100%;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(135deg, transparent 66%, #3b3a3c 67%), linear-gradient(45deg, #3b3a3c 33%, transparent 34%, transparent 44%);
+}
+
+#what_to_buy .one_recipre:hover {
+  transform: scale(1.1);
+  transition: transform 180ms;
+}
+
+#what_to_buy .one_recipre:hover .bottom {
+  background-color: #931d24;
+}
+
+#what_to_buy .one_recipre:hover .bottom:before {
+  background-image: linear-gradient(135deg, transparent 66%, #931d24 67%), linear-gradient(45deg, #931d24 33%, transparent 34%, transparent 44%);
+}
+
+#what_to_buy .one_recipre p {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+#what_to_buy .color_btn {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=products.css.map */

@@ -245,6 +245,19 @@ $( document ).ready(function() {
         $('body').removeClass('no_scroll');
     });
 
+    $(".input_wrap input").click(function(){
+        $(this).removeClass('invalid');
+    })
+
+    $(".input_wrap input:required").blur(function(){
+        $(this).removeClass('invalid');
+        if( $(this).val() == '' || $(this).is(":invalid")) {
+          $(this).addClass('invalid');
+        } else if ( $(this).val() != '' ) {
+            $(this).addClass('filled');
+        }
+    });
+
     if ( $('.main_top_carousel.owl-carousel') ) {
         $(".main_top_carousel.owl-carousel").owlCarousel({
             items: 1,
