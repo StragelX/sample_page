@@ -325,10 +325,6 @@ header {
       line-height: 15px;
       text-transform: uppercase;
 
-      &.active {
-        color: $yellow;
-      }
-
       &::before,
       &:after {
         content: "";

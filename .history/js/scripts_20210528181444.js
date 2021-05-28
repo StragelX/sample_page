@@ -210,9 +210,9 @@ $( document ).ready(function() {
         $(this).closest('.shop_group').toggleClass('active');
     })
 
-    var agrotem_cookies = localStorage.getItem('agrotem_cookies');
+    var got_cookies = localStorage.getItem('got_cookies');
 
-    if (agrotem_cookies != 'checked') {
+    if (got_cookies != 'checked') {
       $(".cookies_wrap").addClass('active');
     }
 

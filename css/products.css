@@ -7,13 +7,27 @@
   padding-top: 200px;
   padding-left: 30px;
   padding-right: 30px;
-  max-height: 1080px;
+  max-height: 1280px;
   background: #931d24 url("../img/product_list_bg.svg") no-repeat left bottom;
+}
+
+#products_top .products_list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #931d24;
+  width: 72px;
+  left: -72px;
 }
 
 @media all and (max-width: 1370px) {
   #products_top .products_list {
     padding-top: 175px;
+  }
+  #products_top .products_list:before {
+    width: 72px;
+    left: -72px;
   }
 }
 

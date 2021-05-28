@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/production.css">
 </head>
 <body class="">
     <header>
@@ -20,7 +22,7 @@
                 <div class="col_xl_4">
                     <div class="menu left">
                         <a href="products.html">Продукція</a>
-                        <a href="production.html">Виробництво</a>
+                        <a href="production.html" class="active">Виробництво</a>
                         <a href="about_us.html">Про нас</a>
                     </div>
                 </div>
@@ -35,7 +37,7 @@
                     <div class="menu right">
                         <a href="sails.html">Продаж</a>
                         <a href="blog.html">Блог</a>
-                        <a href="contacts.html" class="active">Контакти</a>
+                        <a href="contacts.html">Контакти</a>
                     </div>
                 </div>
 
@@ -55,69 +57,135 @@
     </header>
 
     <main>
-        <section id="main_contacts" class="contact_page">
-            <div id="map"></div>
-
+        <section id="production_top">
             <div class="container">
                 <div class="row">
-                    <div class="col_xl_4 xl_offset_8">
-                        <h1>
-                            Контакти
-                        </h1>
+                    <div class="cols_12 col_m_12 col_l_12 col_xl_12">
+                        <h1>Виробництво</h1>
 
-                        <img src="img/main_slider_icons.svg" alt="" class="contacts_img">
-                    </div>
+                        <img src="img/main_slider_icons.svg" alt="" class="icons">
 
-                    <div class="col_xl_6 xl_offset_6">
-                        <div class="map_contacts">
-                            <div class="under_color"></div>
+                        <p class="text">«Агротем» одне з провідних м’ясопереробних підприємств 
+                            Львівщини засноване в 2001 році. </p>
 
-                            <div>
-                                <div class="line">
-                                    <p>тел:</p>
-
-                                    <div>
-                                        <span>офіс</span>
-                                        <a href="tel:+38 (067) 715 75 75" class="hover_op">+38 (067) 715 75 75</a>
-
-                                        <span>гуртівня</span>
-                                        <a href="tel:+38 (032) 242 24 02" class="hover_op">+38 (032) 242 24 02</a>
-                                    </div>
-                                </div>
-
-                                <div class="line">
-                                    <p>E–mail:</p>
-
-                                    <a href="mailto:agrotem@mail.lviv.ua" class="hover_op">agrotem@mail.lviv.ua</a>
-                                </div>
-
-                                <div class="line">
-                                    <p>Адреса:</p>
-
-                                    <a href="https://goo.gl/maps/sSurYN2SULTfmXnG7" class="hover_op">82427, Львівська обл.,
-                                        Стрийський р-н, с.Добряни</a>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="df socials">
-                                    <p>Соц. Мережі:</p>
-
-                                    <a href="" class="hover_op"><img src="img/is.svg" alt=""></a>
-                                    <a href="" class="hover_op"><img src="img/fb.svg" alt=""></a>
-                                    <a href="" class="hover_op"><img src="img/yt.svg" alt=""></a>
-                                </div>
-
-                                <p>
-                                    Якщо у Вас виникли будь які запитання, Напишіть нам:
-                                </p>
-
-                                <button class="color_btn call_modal" data-id="contact_us_modal">Зв‘язатися з нами</button>
+                        <div class="video_wrap" style="background-image: url(img/about_heppines_1.jpg);">
+                            <div class="overlay">
+                                <button class="play call_modal" data-id="video_modal">
+                                    <svg id="Play" xmlns="http://www.w3.org/2000/svg" width="73" height="73" viewBox="0 0 73 73">
+                                        <g id="play-2" data-name="play" transform="translate(29.091 23.828)">
+                                          <g id="Group_5753" data-name="Group 5753" transform="translate(0 0)">
+                                            <path id="Path_14467" data-name="Path 14467" d="M55.127,9.747,40.159.52a3.461,3.461,0,0,0-5.276,2.947v18.37a3.5,3.5,0,0,0,3.454,3.506h.015a3.473,3.473,0,0,0,1.794-.54.988.988,0,1,0-1.029-1.687,1.516,1.516,0,0,1-.77.251,1.536,1.536,0,0,1-1.488-1.529V3.468A1.485,1.485,0,0,1,39.122,2.2L54.091,11.43a1.485,1.485,0,0,1-.007,2.532L43.262,20.589a.988.988,0,0,0,1.032,1.686l10.821-6.626a3.461,3.461,0,0,0,.012-5.9Z" transform="translate(-34.883 0)"></path>
+                                          </g>
+                                        </g>
+                                        <rect id="Rectangle_1840" data-name="Rectangle 1840" width="73" height="73" fill="none"></rect>
+                                        <g id="Ellipse_427" data-name="Ellipse 427" transform="translate(5 5)" fill="none" stroke-width="2">
+                                          <circle cx="32" cy="32" r="32" stroke="none"></circle>
+                                          <circle cx="32" cy="32" r="31" fill="none"></circle>
+                                        </g>
+                                      </svg>               
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="production_slider_wrap">
+            <div class="under_color"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="cols_12 col_m_12 col_l_12 col_xl_12">
+                        <h2 class="two_horizontal_lines">
+                            Як виготовляється Наша продукція
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="production_slider">
+                <div class="owl-carousel production_carousel">
+                    <div>
+                        <div class="one_slide">
+                            <div class="info">
+                                <span class="num">01</span>
+
+                                <h4>Забій</h4>
+
+                                <p class="text">
+                                    Приватне підприємство “Агротем” одне з провідних м’ясопереробних підприємств Львівщини засноване в 2001 році. За цей час, час становлення і розвитку, пошуку своєї ніші на ринку, продукція підприємства знайшла свого покупця. Але ми не стоїмо на місці. 
+                                </p>
+                            </div>
+                            <div class="img_wrap">
+                                <img src="img/about_heppines_1.jpg" alt="">
+                            </div>                                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="one_slide">
+                            <div class="info">
+                                <span class="num">02</span>
+
+                                <h4>Забій</h4>
+
+                                <p class="text">
+                                    Приватне підприємство “Агротем” одне з провідних м’ясопереробних підприємств Львівщини засноване в 2001 році. За цей час, час становлення і розвитку, пошуку своєї ніші на ринку, продукція підприємства знайшла свого покупця. Але ми не стоїмо на місці. 
+                                </p>
+                            </div>
+                            <div class="img_wrap">
+                                <img src="img/about_heppines_1.jpg" alt="">
+                            </div>                                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="one_slide">
+                            <div class="info">
+                                <span class="num">03</span>
+
+                                <h4>Забій</h4>
+
+                                <p class="text">
+                                    Приватне підприємство “Агротем” одне з провідних м’ясопереробних підприємств Львівщини засноване в 2001 році. За цей час, час становлення і розвитку, пошуку своєї ніші на ринку, продукція підприємства знайшла свого покупця. Але ми не стоїмо на місці. 
+                                </p>
+                            </div>
+                            <div class="img_wrap">
+                                <img src="img/about_heppines_1.jpg" alt="">
+                            </div>                                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="one_slide">
+                            <div class="info">
+                                <span class="num">04</span>
+
+                                <h4>Забій</h4>
+
+                                <p class="text">
+                                    Приватне підприємство “Агротем” одне з провідних м’ясопереробних підприємств Львівщини засноване в 2001 році. За цей час, час становлення і розвитку, пошуку своєї ніші на ринку, продукція підприємства знайшла свого покупця. Але ми не стоїмо на місці. 
+                                </p>
+                            </div>
+                            <div class="img_wrap">
+                                <img src="img/about_heppines_1.jpg" alt="">
+                            </div>                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="get_asortiment">
+            <h2 class="two_horizontal_lines">Ознайомтесь З асортиментом</h2>
+
+            <p class="text">
+                Приватне підприємство “Агротем” одне з провідних м’ясопереробних підприємств Львівщини 
+                засноване в 2001 році. За цей час, час становлення і розвитку, пошуку своєї ніші на ринку.
+            </p>
+
+            <a href="products.html" class="color_btn"">Каталог продукції</a>
         </section>
     </main>
 
@@ -223,7 +291,7 @@
         </div>
     </div>
 
-    <div class="cookies_wrap">
+    <div class="cookies_wrap active">
         <div class="container">
             <div class="row">
                 <div class="col_xl_10">
@@ -248,6 +316,8 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnC0amEPKxINO0yniDUeZcWQ8bqp0ui-c"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.navigation.js"></script>
     <script src="js/counter.js"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="js/scripts.js"></script>
 </html>

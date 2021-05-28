@@ -1851,6 +1851,10 @@ header .menu a {
   text-transform: uppercase;
 }
 
+header .menu a.active {
+  color: #f9a46a;
+}
+
 header .menu a::before, header .menu a:after {
   content: "";
   position: absolute;

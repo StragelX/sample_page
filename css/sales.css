@@ -181,8 +181,8 @@
   width: 26px;
   height: 26px;
   background: url("../img/arrow.svg") no-repeat center/contain;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -webkit-transition: -webkit-transform 180ms;
   transition: -webkit-transform 180ms;
   transition: transform 180ms;
@@ -220,8 +220,8 @@
 }
 
 #shops .shops_list .shop_group.active .top_line:after {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   -webkit-transition: -webkit-transform 180ms;
   transition: -webkit-transform 180ms;
   transition: transform 180ms;
