@@ -55,8 +55,7 @@
   background-size: 17px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(135deg, transparent 66%, #fff 67%), linear-gradient(45deg, #fff 33%, transparent 34%, transparent 44%);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #production_top .video_wrap:before {
@@ -74,8 +73,7 @@
   background-size: 17px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(135deg, #fff 33%, transparent 34%, transparent 44%), linear-gradient(45deg, transparent 66%, #fff 67%);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #production_top .video_wrap .overlay {
@@ -86,15 +84,9 @@
   right: 0;
   background-color: #1f1e1c;
   opacity: 0.5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #production_slider_wrap {
@@ -155,11 +147,8 @@
 }
 
 #production_slider_wrap .one_slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -169,13 +158,10 @@
   height: 414px;
   padding-top: 7px;
   padding-bottom: 7px;
-  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
-          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
   background-color: #ffffff;
   margin-left: 60px;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 
 #production_slider_wrap .info .num {
@@ -215,17 +201,10 @@
   height: 60px;
   background-color: #f9a46a;
   pointer-events: all;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -238,7 +217,6 @@
 #production_slider_wrap .owl-prev:hover,
 #production_slider_wrap .owl-next:hover {
   opacity: 0.7;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -274,26 +252,16 @@
 }
 
 #production_slider_wrap .owl-next:before {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #get_asortiment {
   padding-top: 125px;
   padding-bottom: 155px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: url("../img/lasuy.jpg") no-repeat center/cover;
 }
 

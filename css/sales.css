@@ -17,21 +17,14 @@
 
 #production_top .production_switcher {
   border-bottom: 1px solid #f3f3f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 150px;
 }
 
 #production_top .production_switcher a {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  flex: 1 1 100%;
   border-bottom: 3px solid transparent;
-  -webkit-transition: border-bottom 180ms;
   transition: border-bottom 180ms;
   color: #1f1e1c;
   font-family: "Roboto Slab";
@@ -48,7 +41,6 @@
 
 #production_top .production_switcher a.active, #production_top .production_switcher a:hover {
   border-bottom: 3px solid #b41f28;
-  -webkit-transition: border-bottom 180ms;
   transition: border-bottom 180ms;
 }
 
@@ -65,8 +57,7 @@
 #production_top .img_wrap {
   padding-top: 7px;
   padding-bottom: 7px;
-  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
-          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
   background-color: #ffffff;
 }
 
@@ -118,8 +109,7 @@
   background-size: 17px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(135deg, transparent 66%, #fff 67%), linear-gradient(45deg, #fff 33%, transparent 34%, transparent 44%);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #shops:before {
@@ -137,8 +127,7 @@
   background-size: 17px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(135deg, #fff 33%, transparent 34%, transparent 44%), linear-gradient(45deg, transparent 66%, #fff 67%);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #shops #map {
@@ -157,15 +146,9 @@
 }
 
 #shops .shops_list .shop_group .top_line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   color: #f9a46a;
   font-family: "Roboto Slab";
@@ -180,32 +163,32 @@
   display: block;
   width: 26px;
   height: 26px;
-  background: url("../img/arrow.svg") no-repeat center/contain;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
-  transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
+  background: url("../img/up_arrow.svg") no-repeat center/contain;
+  transform: rotateX(0deg);
+  opacity: 1;
   margin-top: 3px;
+  transition: transform 0.5s, opacity 0.5s;
+  transform-style: preserve-3d;
+}
+
+#shops .shops_list .shop_group .top_line:hover:after {
+  opacity: 0.7;
+  transition: transform 0.5s, opacity 0.5s;
+  transform-style: preserve-3d;
+  transform: rotateX(180deg);
 }
 
 #shops .shops_list .shop_group .list {
   padding-top: 20px;
   overflow: hidden;
   max-height: 0;
-  -webkit-transition: max-height 360ms;
   transition: max-height 360ms;
 }
 
 #shops .shops_list .shop_group .line {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 12px;
@@ -220,17 +203,17 @@
 }
 
 #shops .shops_list .shop_group.active .top_line:after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
-  transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
+  transform: rotateX(180deg);
+  transition: transform 0.5s;
+}
+
+#shops .shops_list .shop_group.active .top_line:hover:after {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: rotateX(0deg);
 }
 
 #shops .shops_list .shop_group.active .list {
   max-height: 1000px;
-  -webkit-transition: max-height 360ms;
   transition: max-height 360ms;
 }
 
@@ -273,18 +256,14 @@
 }
 
 #our_sales .sales {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #our_sales .sales img {
   height: 60px;
   min-width: 96px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+  flex: 1 1 25%;
   margin-bottom: 15px;
 }
 
@@ -312,8 +291,7 @@
 }
 
 #hurt_rozdrib .img_wrap {
-  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
-          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
   background-color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -324,16 +302,9 @@
   margin-right: 50px;
   max-width: 550px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #hurt_rozdrib .inner.right {

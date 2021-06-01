@@ -166,10 +166,21 @@
           display: block;
           width: 26px;
           height: 26px;
-          background: url("../img/arrow.svg") no-repeat center / contain;
-          transform: rotate(-90deg);
-          transition: transform 180ms;
+          background: url("../img/up_arrow.svg") no-repeat center / contain;
+          transform: rotateX(00deg);
+          opacity: 1;
           margin-top: 3px;
+          transition: transform 0.5s, opacity 0.5s;
+          transform-style: preserve-3d;
+        }
+
+        &:hover {
+          &:after {
+            opacity: 0.7;
+            transition: transform 0.5s, opacity 0.5s;
+            transform-style: preserve-3d;
+            transform: rotateX(180deg);
+          }
         }
       }
 
@@ -200,8 +211,15 @@
       &.active {
         .top_line {
           &:after {
-            transform: rotate(90deg);
-            transition: transform 180ms;
+            transform: rotateX(180deg);
+            transition: transform 0.5s;
+          }
+
+          &:hover {
+            &:after {
+              transition: transform 0.5s, opacity 0.5s;
+              transform: rotateX(0deg);
+            }
           }
         }
 
