@@ -209,7 +209,23 @@
                 Передзвонити вам?
             </h4>
 
+            <div class="input_wrap hover_op">
+                <input type="text" name="tel" required class="">
+                <label for="tel" class="label">Телефон *</label>
+            </div>
+
+            <div class="input_wrap hover_op">
+                <input type="text" name="name" required class="">
+                <label for="name" class="label">Ім’я *</label>
+            </div>
+
             <input type="submit" class="color_btn" value="Передзвонити">
+        </div>
+
+        <div class="modal" id="video_modal">
+            <button class="close hover_op"></button>
+
+            <iframe width="1000" height="563" src="https://www.youtube.com/embed/RGDIU8_q2sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="modal" id="order_1">
@@ -218,6 +234,50 @@
             <h4 class="">
                 Замовити продукцію
             </h4>
+
+            <p class="text">
+                * Ви можете заповнити всі необхідні параметри для замовлення продукції або залишити свій номер телефону і ми 
+                зв’яжемось з Вами для уточнення деталей.
+            </p>
+
+            <div class="df s_betwen order_inner">
+                <div>
+                    <div class="input_wrap">
+                        <input type="text" name="tel" required class="">
+                        <label for="tel" class="label">Телефон *</label>
+                    </div>
+    
+                    <div class="input_wrap">
+                        <input type="text" name="name" class="">
+                        <label for="name" class="label">Ім‘я</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input_wrap">
+                        <input type="text" name="adres" class="">
+                        <label for="adres" class="label">Адреса доставки</label>
+                    </div>
+
+                    <div class="input_wrap checkboxes">
+                        <label for="f1" class="hover_op">
+                            <input type="checkbox" name="f1" id="f1">
+                            <span></span>
+                            Доставити
+                        </label>
+
+                        <label for="f2" class="hover_op">
+                            <input type="checkbox" name="f2" id="f2">
+                            <span></span>
+                            Самовивіз
+                        </label>
+                    </div>
+                </div>
+
+                <p class="">Коментар</p>
+
+                <textarea></textarea>
+            </div>
 
             <input type="submit" class="color_btn" value="ЗАМОВИТИ">
         </div>
