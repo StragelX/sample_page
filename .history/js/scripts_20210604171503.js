@@ -310,9 +310,7 @@ $( document ).ready(function() {
             autoplay: false,
 
             responsive:{
-                1000:{
-                    items: 2.5,
-                    margin: 10
+                0:{
                 },
                 1300:{
                     items: 2.8,

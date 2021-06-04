@@ -751,10 +751,6 @@ footer {
     &#order_1 {
       width: 1026px;
       padding: 130px 130px 75px 130px;
-
-      @media all and (max-width: 769px) {
-        padding: 50px 30px 50px 30px;
-      }
     }
 
     .order_inner {
@@ -810,10 +806,6 @@ footer {
 
   .input_wrap {
     width: 320px;
-
-    @media all and (max-width: 769px) {
-      width: 300px;
-    }
 
     label {
       position: absolute;
@@ -894,10 +886,6 @@ footer {
 
         & + label {
           margin-left: 35px;
-
-          @media all and (max-width: 769px) {
-            margin-left: 25px;
-          }
         }
 
         span {

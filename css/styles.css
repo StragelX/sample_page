@@ -1525,6 +1525,12 @@ header .logo {
   justify-content: center;
 }
 
+@media all and (max-width: 769px) {
+  header .logo {
+    margin-top: 50px;
+  }
+}
+
 header .menu {
   margin-top: 57px;
   display: flex;
@@ -1547,6 +1553,7 @@ header .menu a {
   letter-spacing: 1.2px;
   line-height: 15px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 header .menu a.active {
@@ -1579,6 +1586,18 @@ header .menu a:hover::before, header .menu a:hover:after {
 
 header .menu a + a {
   margin-left: 50px;
+}
+
+@media all and (max-width: 1025px) {
+  header .menu a + a {
+    margin-left: 30px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  header .menu a + a {
+    margin-left: 15px;
+  }
 }
 
 main {
@@ -1695,6 +1714,12 @@ footer .copiright {
   padding-top: 5px;
 }
 
+@media all and (max-width: 769px) {
+  footer .copiright {
+    margin-right: auto;
+  }
+}
+
 footer .bottom {
   background-color: #b41f28;
   padding-top: 15px;
@@ -1718,6 +1743,18 @@ footer .bottom a {
 
 footer .bottom a + a {
   margin-left: 90px;
+}
+
+@media all and (max-width: 1025px) {
+  footer .bottom a + a {
+    margin-left: 40px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  footer .bottom a + a {
+    margin-left: 10px;
+  }
 }
 
 .cookies_wrap {
@@ -1782,6 +1819,12 @@ footer .bottom a + a {
   position: fixed;
   width: 368px;
   height: 150px;
+}
+
+@media all and (max-width: 1025px) {
+  .order_product {
+    bottom: 125px;
+  }
 }
 
 .order_product:before, .order_product:after {
@@ -1921,6 +1964,12 @@ footer .bottom a + a {
   padding: 130px 130px 75px 130px;
 }
 
+@media all and (max-width: 769px) {
+  .modal_overlay .modal#order_1 {
+    padding: 50px 30px 50px 30px;
+  }
+}
+
 .modal_overlay .modal .order_inner {
   align-items: flex-start;
   flex-wrap: wrap;
@@ -1973,6 +2022,12 @@ footer .bottom a + a {
 
 .modal_overlay .input_wrap {
   width: 320px;
+}
+
+@media all and (max-width: 769px) {
+  .modal_overlay .input_wrap {
+    width: 300px;
+  }
 }
 
 .modal_overlay .input_wrap label {
@@ -2054,6 +2109,12 @@ footer .bottom a + a {
 
 .modal_overlay .input_wrap.checkboxes label + label {
   margin-left: 35px;
+}
+
+@media all and (max-width: 769px) {
+  .modal_overlay .input_wrap.checkboxes label + label {
+    margin-left: 25px;
+  }
 }
 
 .modal_overlay .input_wrap.checkboxes label span {
@@ -2472,6 +2533,12 @@ footer .bottom a + a {
   overflow: hidden;
 }
 
+@media all and (max-width: 1025px) {
+  #main_contacts {
+    padding-top: 0;
+  }
+}
+
 #main_contacts #map {
   position: absolute;
   top: 0;
@@ -2479,6 +2546,15 @@ footer .bottom a + a {
   width: 55%;
   min-height: 100%;
   max-height: 1080px;
+}
+
+@media all and (max-width: 1025px) {
+  #main_contacts #map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 75px;
+  }
 }
 
 #main_contacts h2 {
@@ -2499,6 +2575,12 @@ footer .bottom a + a {
   left: -70px;
   right: -350px;
   background-color: #b41f28;
+}
+
+@media all and (max-width: 1025px) {
+  #main_contacts .map_contacts .under_color {
+    bottom: -50px;
+  }
 }
 
 #main_contacts .map_contacts .under_color:before {

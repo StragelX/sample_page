@@ -280,7 +280,7 @@ $( document ).ready(function() {
 
     if ( $('.with_low_carousel.owl-carousel') ) {
         $(".with_low_carousel.owl-carousel").owlCarousel({
-            
+            items: 4,
             margin: 10,
             loop: true,
             nav: false,
@@ -290,11 +290,9 @@ $( document ).ready(function() {
             responsive:{
                 0:{
                 },
-                900:{
-                    items: 3
+                600:{
                 },
-                1100:{
-                    items: 4
+                1000:{
                 }
             }
         });
@@ -310,9 +308,7 @@ $( document ).ready(function() {
             autoplay: false,
 
             responsive:{
-                1000:{
-                    items: 2.5,
-                    margin: 10
+                0:{
                 },
                 1300:{
                     items: 2.8,

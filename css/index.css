@@ -197,6 +197,12 @@
   margin-right: 70px;
 }
 
+@media all and (max-width: 1025px) {
+  .story_counters .small {
+    flex: 1 1 40%;
+  }
+}
+
 .story_counters .big {
   max-width: 50%;
 }
@@ -213,6 +219,12 @@
 @media all and (max-width: 1370px) {
   #story {
     background-position: right 60px bottom 175px, left 420px top 430px;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  #story {
+    padding-bottom: 0;
   }
 }
 
@@ -258,12 +270,36 @@
   }
 }
 
+@media all and (max-width: 1300px) {
+  #story .img_1 {
+    width: 100%;
+    margin-left: 15px;
+  }
+}
+
+@media all and (max-width: 1025px) {
+  #story .img_2 {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 100px;
+  }
+}
+
 #story .story_counters {
   margin-top: -400px;
   background-color: #b41f28;
   display: flex;
   padding: 35px 50px;
   flex-wrap: wrap;
+}
+
+@media all and (max-width: 1025px) {
+  #story .story_counters {
+    margin-top: -12px;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 1;
+  }
 }
 
 #story .story_counters:before {
@@ -363,6 +399,12 @@
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 450px 450px 450px;
+}
+
+@media all and (max-width: 1025px) {
+  #big_asortemet .products_grid_wrap {
+    grid-template-rows: 325px 325px 325px;
+  }
 }
 
 #big_asortemet .products_grid_wrap:before {
@@ -552,7 +594,6 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 350px;
   top: 342px;
   left: calc(33% - 120px);
   pointer-events: none;
@@ -568,9 +609,22 @@
   text-transform: uppercase;
 }
 
+@media all and (max-width: 1025px) {
+  #big_asortemet .products_grid_wrap .quality {
+    top: 216px;
+  }
+}
+
 #big_asortemet .products_grid_wrap .quality.for_u {
   top: 796px;
   left: calc(66% - 112px);
+}
+
+@media all and (max-width: 1025px) {
+  #big_asortemet .products_grid_wrap .quality.for_u {
+    top: 546px;
+    left: calc(66% - 117px);
+  }
 }
 
 #big_asortemet .products_grid_wrap .quality:before {
@@ -622,6 +676,12 @@
   margin-top: 150px;
   background-color: #fab688;
   padding: 55px 80px;
+}
+
+@media all and (max-width: 1025px) {
+  #with_love .slider_wrap {
+    margin-left: -15px;
+  }
 }
 
 #with_love .slider_wrap:before {

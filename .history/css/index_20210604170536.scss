@@ -224,7 +224,7 @@
   }
 
   @media all and (max-width: 1025px) {
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
 
   h1 {
@@ -408,7 +408,7 @@
     grid-template-rows: 450px 450px 450px;
 
     @media all and (max-width: 1025px) {
-      grid-template-rows: 325px 325px 325px;
+      grid-template-rows: 324px 450px 450px;
     }
 
     &:before {
@@ -672,6 +672,7 @@
       align-items: center;
       justify-content: center;
       position: absolute;
+      top: 350px;
       top: 342px;
       left: calc(33% - 120px);
       pointer-events: none;
@@ -686,18 +687,9 @@
       line-height: normal;
       text-transform: uppercase;
 
-      @media all and (max-width: 1025px) {
-        top: 216px;
-      }
-
       &.for_u {
         top: 796px;
         left: calc(66% - 112px);
-
-        @media all and (max-width: 1025px) {
-          top: 546px;
-          left: calc(66% - 117px);
-        }
       }
 
       &:before {
@@ -752,10 +744,6 @@
     margin-top: 150px;
     background-color: #fab688;
     padding: 55px 80px;
-
-    @media all and (max-width: 1025px) {
-      margin-left: -15px;
-    }
 
     &:before {
       content: "";

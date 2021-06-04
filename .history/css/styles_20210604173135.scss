@@ -307,10 +307,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media all and (max-width: 769px) {
-      margin-top: 50px;
-    }
   }
 
   .menu {
@@ -373,10 +369,6 @@ header {
 
         @media all and (max-width: 1025px) {
           margin-left: 30px;
-        }
-
-        @media all and (max-width: 769px) {
-          margin-left: 15px;
         }
       }
     }
@@ -497,10 +489,6 @@ footer {
     line-height: 18px;
     margin-right: 85px;
     padding-top: 5px;
-
-    @media all and (max-width: 769px) {
-      margin-right: auto;
-    }
   }
 
   .bottom {
@@ -524,14 +512,6 @@ footer {
 
       & + a {
         margin-left: 90px;
-
-        @media all and (max-width: 1025px) {
-          margin-left: 40px;
-        }
-
-        @media all and (max-width: 769px) {
-          margin-left: 10px;
-        }
       }
     }
   }
@@ -751,10 +731,6 @@ footer {
     &#order_1 {
       width: 1026px;
       padding: 130px 130px 75px 130px;
-
-      @media all and (max-width: 769px) {
-        padding: 50px 30px 50px 30px;
-      }
     }
 
     .order_inner {
@@ -810,10 +786,6 @@ footer {
 
   .input_wrap {
     width: 320px;
-
-    @media all and (max-width: 769px) {
-      width: 300px;
-    }
 
     label {
       position: absolute;
@@ -894,10 +866,6 @@ footer {
 
         & + label {
           margin-left: 35px;
-
-          @media all and (max-width: 769px) {
-            margin-left: 25px;
-          }
         }
 
         span {

@@ -224,7 +224,7 @@
   }
 
   @media all and (max-width: 1025px) {
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
 
   h1 {
@@ -752,10 +752,6 @@
     margin-top: 150px;
     background-color: #fab688;
     padding: 55px 80px;
-
-    @media all and (max-width: 1025px) {
-      margin-left: -15px;
-    }
 
     &:before {
       content: "";
