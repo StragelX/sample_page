@@ -141,6 +141,14 @@
   align-items: center;
 }
 
+@media all and (max-width: 769px) {
+  #blog .label {
+    left: 0;
+    bottom: auto;
+    top: 200px;
+  }
+}
+
 #blog .label img {
   flex: none;
   width: 26px;
@@ -189,6 +197,12 @@
   align-items: center;
 }
 
+@media all and (max-width: 769px) {
+  #blog .one_article {
+    flex-wrap: wrap;
+  }
+}
+
 #blog .one_article + .one_article {
   margin-top: 60px;
 }
@@ -206,9 +220,23 @@
   transition: transform 180ms;
 }
 
+@media all and (max-width: 769px) {
+  #blog .one_article .img_wrap {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
+
 #blog .one_article:hover .img_wrap {
   transform: scale(1.1);
   transition: transform 180ms;
+}
+
+@media all and (max-width: 769px) {
+  #blog .one_article:hover .img_wrap {
+    transform: scale(1);
+  }
 }
 
 #blog .one_article:hover .info {

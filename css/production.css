@@ -4,6 +4,12 @@
   background: url("../img/cow_bg.svg") no-repeat top 250px right, url("../img/pig_bg.svg") no-repeat bottom left;
 }
 
+@media all and (max-width: 769px) {
+  #production_top {
+    background: url("../img/cow_bg.svg") no-repeat top 50px right, url("../img/pig_bg.svg") no-repeat bottom 150px left;
+  }
+}
+
 #production_top h1 {
   color: #de8e51;
   font-family: "Roboto Slab";
@@ -146,11 +152,23 @@
   margin-left: calc((100% - 1206px) / 2);
 }
 
+@media all and (max-width: 1025px) {
+  #production_slider_wrap .production_slider {
+    margin-left: 30px;
+  }
+}
+
 #production_slider_wrap .one_slide {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@media all and (max-width: 769px) {
+  #production_slider_wrap .one_slide {
+    min-height: 480px;
+  }
 }
 
 #production_slider_wrap .img_wrap {
@@ -162,6 +180,16 @@
   background-color: #ffffff;
   margin-left: 60px;
   flex: none;
+}
+
+@media all and (max-width: 769px) {
+  #production_slider_wrap .img_wrap {
+    width: 46%;
+    height: 300px;
+    margin-right: 30px;
+    margin-left: 30px;
+    align-self: center;
+  }
 }
 
 #production_slider_wrap .info .num {
@@ -184,6 +212,12 @@
   letter-spacing: 1.25px;
   text-transform: uppercase;
   margin-bottom: 80px;
+}
+
+@media all and (max-width: 769px) {
+  #production_slider_wrap .info h4 {
+    margin-bottom: 50px;
+  }
 }
 
 #production_slider_wrap .info .text {
@@ -312,5 +346,12 @@
   color: #fff;
   text-align: center;
   margin-bottom: 40px;
+}
+
+@media all and (max-width: 769px) {
+  #get_asortiment .text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 /*# sourceMappingURL=production.css.map */

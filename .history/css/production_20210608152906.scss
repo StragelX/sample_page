@@ -1,0 +1,350 @@
+@import "variables";
+
+#production_top {
+  padding-top: 150px;
+  background: url("../img/cow_bg.svg") no-repeat top 250px right,
+    url("../img/pig_bg.svg") no-repeat bottom left;
+
+  h1 {
+    color: #de8e51;
+    font-family: "Roboto Slab";
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 590px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .video_wrap {
+    height: 658px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-bottom: 150px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: calc(100% - 10px);
+      z-index: 0;
+      background-position: -9px 0;
+      background-size: 17px 100%;
+      background-repeat: repeat-x;
+      background-image: linear-gradient(135deg, transparent 66%, #fff 67%),
+        linear-gradient(45deg, #fff 33%, transparent 34%, transparent 44%);
+      transform: rotate(180deg);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      top: calc(100% - 10px);
+      left: 0;
+      right: 0;
+      bottom: auto;
+      z-index: 1;
+      background-position: -9px 0;
+      background-size: 17px 100%;
+      background-repeat: repeat-x;
+      background-image: linear-gradient(
+          135deg,
+          #fff 33%,
+          transparent 34%,
+          transparent 44%
+        ),
+        linear-gradient(45deg, transparent 66%, #fff 67%);
+      transform: rotate(180deg);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $dark;
+      opacity: 0.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+#production_slider_wrap {
+  padding-bottom: 120px;
+
+  .under_color {
+    height: 276px;
+    background-color: $rad;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 350px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      z-index: 0;
+      background-position: -8px 0;
+      background-size: 15px 100%;
+      background-repeat: repeat-x;
+      background-image: linear-gradient(
+          135deg,
+          $rad 33%,
+          transparent 34%,
+          transparent 44%
+        ),
+        linear-gradient(45deg, transparent 66%, $rad 67%);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      z-index: 0;
+      background-position: -8px 0;
+      background-size: 15px 100%;
+      background-repeat: repeat-x;
+      background-image: linear-gradient(135deg, transparent 66%, $rad 67%),
+        linear-gradient(45deg, $rad 33%, transparent 34%, transparent 44%);
+    }
+  }
+
+  h2 {
+    width: 555px;
+    color: $dark;
+    margin-bottom: 100px;
+  }
+
+  .production_slider {
+    margin-left: calc((100% - 1206px) / 2);
+
+    @media all and (max-width: 1025px) {
+      margin-left: 30px;
+    }
+  }
+
+  .one_slide {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .img_wrap {
+    width: 550px;
+    height: 414px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    margin-left: 60px;
+    flex: none;
+
+    @media all and (max-width: 769px) {
+      width: 45%;
+      margin-right: 30px;
+    }
+  }
+
+  .info {
+    .num {
+      color: $yellow;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0.6px;
+      line-height: 14px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      color: $dark;
+      font-family: "Roboto Slab";
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+      margin-bottom: 80px;
+    }
+
+    .text {
+      color: #ffffff;
+    }
+  }
+
+  .owl-nav {
+    pointer-events: none;
+    margin-top: -100px;
+  }
+
+  .owl-prev,
+  .owl-next {
+    width: 60px;
+    height: 60px;
+    background-color: $yellow;
+    pointer-events: all;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 180ms;
+
+    &.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 180ms;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      height: 26px;
+      width: 26px;
+      background: url("../img/arrow_white.svg") no-repeat center / contain;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      z-index: 0;
+      background-position: -15px ​0;
+      background-size: 15px 100%;
+      background-repeat: repeat-x;
+      background-image: linear-gradient(
+          135deg,
+          $yellow 33%,
+          transparent 34%,
+          transparent 44%
+        ),
+        linear-gradient(45deg, transparent 66%, $yellow 67%);
+    }
+  }
+
+  .owl-next {
+    margin-left: 17px;
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+#get_asortiment {
+  padding-top: 125px;
+  padding-bottom: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../img/lasuy.jpg") no-repeat center / cover;
+
+  &:before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $dark;
+    opacity: 0.71;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 0;
+    background-position: -8px 0;
+    background-size: 15px 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(
+        135deg,
+        #fff 33%,
+        transparent 34%,
+        transparent 44%
+      ),
+      linear-gradient(45deg, transparent 66%, #fff 67%);
+  }
+
+  h2 {
+    max-width: 475px;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    max-width: 794px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}

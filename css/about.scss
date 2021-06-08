@@ -29,6 +29,10 @@
     background-color: $lightn_brown;
     padding: 35px 102px 65px 80px;
 
+    @media all and (max-width: 769px) {
+      width: 100%;
+    }
+
     &:before {
       content: "";
       display: block;
@@ -96,6 +100,10 @@
       font-weight: 300;
       letter-spacing: 0.7px;
       line-height: 27px;
+
+      @media all and (max-width: 769px) {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -104,6 +112,10 @@
   padding-top: 320px;
   padding-bottom: 75px;
   background: url("../img/cow_bg.svg") no-repeat top 800px right -100px;
+
+  @media all and (max-width: 769px) {
+    padding-top: 150px;
+  }
 
   .img_wrap {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
@@ -115,6 +127,11 @@
   .about_heppines_1 {
     margin-left: -50px;
     width: 565px;
+
+    @media all and (max-width: 769px) {
+      width: 100%;
+      margin-left: 0;
+    }
   }
 
   .about_heppines_2 {
@@ -122,10 +139,20 @@
     margin-top: -160px;
     width: 452px;
     margin-bottom: 100px;
+
+    @media all and (max-width: 769px) {
+      float: none;
+      width: 100%;
+      margin-top: 0;
+    }
   }
 
   .we_work {
     padding-left: 50px;
+
+    @media all and (max-width: 769px) {
+      padding-left: 0;
+    }
   }
 
   h2 {
@@ -158,6 +185,11 @@
       margin-bottom: 10px;
       color: $dark_rad;
     }
+  }
+
+  .info_block {
+    margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 
@@ -279,6 +311,10 @@
   padding-bottom: 150px;
   z-index: 2;
 
+  @media all and (max-width: 769px) {
+    padding-top: 100px;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -345,6 +381,13 @@
       width: 85px;
       height: 85px;
       background: url("../img/stamp.svg") no-repeat center / contain;
+    }
+  }
+
+  .info_block {
+    @media all and (max-width: 769px) {
+      margin-top: 60px;
+      margin-bottom: 60px;
     }
   }
 

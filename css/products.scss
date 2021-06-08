@@ -13,6 +13,10 @@
     background: $dark_rad url("../img/product_list_bg.svg") no-repeat left
       bottom;
 
+    @media all and (max-width: 1025px) {
+      width: min-content;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -111,6 +115,10 @@
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    @media all and (max-width: 1025px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .one_product {
@@ -119,6 +127,10 @@
     display: block;
     transform: scale(1);
     transition: transform 180ms;
+
+    @media all and (max-width: 769px) {
+      width: auto;
+    }
 
     .img_wrap {
       width: 100%;
@@ -148,6 +160,10 @@
       left: 0;
       z-index: 2;
 
+      @media all and (max-width: 769px) {
+        width: 100%;
+      }
+
       &:before {
         content: "";
         display: block;
@@ -170,6 +186,10 @@
     &:hover {
       transform: scale(1.1);
       transition: transform 180ms;
+
+      @media all and (max-width: 1025px) {
+        transform: scale(1);
+      }
 
       .bottom {
         background-color: $dark_rad;
@@ -257,6 +277,12 @@
     width: 600px;
     float: right;
 
+    @media all and (max-width: 1025px) {
+      width: auto;
+      float: none;
+      padding-left: 30px;
+    }
+
     h1 {
       color: #de8e51;
       font-family: "Roboto Slab";
@@ -339,6 +365,11 @@
     flex-wrap: wrap;
     justify-content: flex-end;
 
+    @media all and (max-width: 769px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     &:before {
       content: "";
       display: block;
@@ -363,6 +394,10 @@
     width: 70%;
     padding-bottom: 20px;
     display: flex;
+
+    @media all and (max-width: 769px) {
+      width: 100%;
+    }
 
     & + .line {
       padding-top: 20px;
@@ -407,6 +442,10 @@
   .one_recipre {
     height: 279px;
     display: block;
+
+    @media all and (max-width: 769px) {
+      margin-bottom: 30px;
+    }
 
     .img_wrap {
       height: 100%;

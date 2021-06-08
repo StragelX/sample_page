@@ -1,0 +1,418 @@
+@import "variables";
+
+#production_top {
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  h1 {
+    color: #de8e51;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .icons {
+    display: block;
+    margin: 10px auto 50px;
+  }
+
+  .production_switcher {
+    border-bottom: 1px solid #f3f3f3;
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+
+    a {
+      flex: 1 1 100%;
+      border-bottom: 3px solid transparent;
+      transition: border-bottom 180ms;
+      color: $dark;
+      font-family: "Roboto Slab";
+      font-size: 25px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 1.25px;
+      line-height: normal;
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      margin-bottom: -2px;
+
+      &.active,
+      &:hover {
+        border-bottom: 3px solid $rad;
+        transition: border-bottom 180ms;
+      }
+    }
+  }
+
+  h2 {
+    color: $dark;
+    width: 295px;
+    margin-bottom: 56px;
+  }
+
+  .info_block {
+    .text {
+      max-width: 485px;
+    }
+  }
+
+  .img_wrap {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+  }
+
+  .rozdrib_top_1 {
+    margin-top: -400px;
+
+    @media all and (max-width: 1370px) {
+      margin-left: 56px;
+      margin-right: -56px;
+    }
+
+    @media all and (max-width: 1025px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .rozdrib_top_2 {
+    margin-top: -150px;
+    width: 450px;
+
+    @media all and (max-width: 1370px) {
+      margin-left: 56px;
+      margin-right: -56px;
+    }
+
+    @media all and (max-width: 1025px) {
+      margin-top: -100px;
+    }
+  }
+
+  .on_img.right {
+    right: 14px;
+
+    @media all and (max-width: 1370px) {
+      right: -42px;
+    }
+
+    @media all and (max-width: 1025px) {
+      right: -69px;
+      bottom: 400px;
+    }
+  }
+}
+
+#shops {
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: calc(100% - 10px);
+    z-index: 0;
+    background-position: -9px 0;
+    background-size: 17px 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(135deg, transparent 66%, #fff 67%),
+      linear-gradient(45deg, #fff 33%, transparent 34%, transparent 44%);
+    transform: rotate(180deg);
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    background-position: -9px 0;
+    background-size: 17px 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(
+        135deg,
+        #fff 33%,
+        transparent 34%,
+        transparent 44%
+      ),
+      linear-gradient(45deg, transparent 66%, #fff 67%);
+    transform: rotate(180deg);
+  }
+
+  #map {
+    height: 630px;
+  }
+
+  .shops_list {
+    background-color: $dark;
+    height: 630px;
+    padding-top: 30px;
+
+    .shop_group {
+      padding: 20px 80px 20px 60px;
+      overflow: hidden;
+
+      .top_line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: $yellow;
+        font-family: "Roboto Slab";
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 26px;
+          height: 26px;
+          background: url("../img/up_arrow.svg") no-repeat center / contain;
+          transform: rotateX(00deg);
+          opacity: 1;
+          margin-top: 3px;
+          transition: transform 0.5s, opacity 0.5s;
+          transform-style: preserve-3d;
+        }
+
+        &:hover {
+          &:after {
+            opacity: 0.7;
+            transition: transform 0.5s, opacity 0.5s;
+            transform-style: preserve-3d;
+            transform: rotateX(180deg);
+          }
+        }
+      }
+
+      .list {
+        padding-top: 20px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 360ms;
+      }
+
+      .line {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        line-height: 14px;
+        text-transform: uppercase;
+
+        img {
+          margin-right: 30px;
+        }
+      }
+
+      &.active {
+        .top_line {
+          &:after {
+            transform: rotateX(180deg);
+            transition: transform 0.5s;
+          }
+
+          &:hover {
+            &:after {
+              transition: transform 0.5s, opacity 0.5s;
+              transform: rotateX(0deg);
+            }
+          }
+        }
+
+        .list {
+          max-height: 1000px;
+          transition: max-height 360ms;
+        }
+      }
+
+      & + .shop_group {
+        border-top: 1px solid #353432;
+      }
+    }
+  }
+}
+
+#our_sales {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 0;
+    background-position: -8px 0;
+    background-size: 15px 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(
+        135deg,
+        #fff 33%,
+        transparent 34%,
+        transparent 44%
+      ),
+      linear-gradient(45deg, transparent 66%, #fff 67%);
+  }
+
+  h4 {
+    color: $dark;
+    margin-bottom: 20px;
+
+    @media all and (max-width: 1025px) {
+      margin-top: 60px;
+    }
+  }
+
+  h2 {
+    color: $dark;
+    margin-bottom: 56px;
+    width: 493px;
+  }
+
+  .sales {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media all and (max-width: 1025px) {
+      margin-top: 60px;
+    }
+
+    img {
+      height: 60px;
+      min-width: 96px;
+      flex: 1 1 25%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+#hurt_rozdrib {
+  padding-bottom: 150px;
+  margin-top: -100px;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 0;
+    background-position: -8px 0;
+    background-size: 15px 100%;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(
+        135deg,
+        #fff 33%,
+        transparent 34%,
+        transparent 44%
+      ),
+      linear-gradient(45deg, transparent 66%, #fff 67%);
+  }
+
+  .img_wrap {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media all and (max-width: 1025px) {
+      height: 100%;
+    }
+  }
+
+  .inner {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 550px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media all and (max-width: 1025px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media all and (max-width: 769px) {
+      max-width: 100%;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    &.right {
+      float: right;
+
+      @media all and (max-width: 769px) {
+        float: none;
+      }
+    }
+  }
+
+  h2 {
+    color: $dark;
+    margin-bottom: 40px;
+
+    @media all and (max-width: 769px) {
+      margin-top: 60px;
+    }
+  }
+
+  .color_btn {
+    margin-top: 34px;
+  }
+
+  .tel {
+    display: block;
+    margin-top: 30px;
+    color: $dark;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    &:before {
+      content: "тел:";
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: baseline;
+      color: $yellow;
+      font-family: "Roboto Slab";
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      line-height: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
