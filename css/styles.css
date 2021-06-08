@@ -1975,6 +1975,10 @@ footer .bottom a + a {
   width: 320px;
 }
 
+.modal_overlay .input_wrap:not(.checkboxes) label {
+  pointer-events: none;
+}
+
 .modal_overlay .input_wrap label {
   position: absolute;
   left: 15px;

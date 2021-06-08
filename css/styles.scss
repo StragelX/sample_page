@@ -772,6 +772,12 @@ footer {
   .input_wrap {
     width: 320px;
 
+    &:not(.checkboxes) {
+      label {
+        pointer-events: none;
+      }
+    }
+
     label {
       position: absolute;
       left: 15px;
