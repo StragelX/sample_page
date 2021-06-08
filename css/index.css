@@ -728,6 +728,14 @@
   }
 }
 
+@media all and (max-width: 769px) {
+  #with_love .slider_wrap {
+    width: calc(100% + 30px);
+    margin-right: -15px;
+    padding: 55px 30px;
+  }
+}
+
 #with_love .slider_wrap:before {
   content: "";
   display: block;

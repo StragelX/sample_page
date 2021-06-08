@@ -144,6 +144,12 @@
   padding-left: 50px;
 }
 
+@media all and (max-width: 769px) {
+  #your_heppines .we_work {
+    padding-left: 0;
+  }
+}
+
 #your_heppines h2 {
   margin-bottom: 50px;
   color: #000;
@@ -282,6 +288,12 @@
   padding-top: 150px;
   padding-bottom: 150px;
   z-index: 2;
+}
+
+@media all and (max-width: 769px) {
+  #we_are_trying {
+    padding-top: 100px;
+  }
 }
 
 #we_are_trying:after {

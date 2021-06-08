@@ -2313,6 +2313,12 @@ footer .bottom a + a {
   margin-left: calc((100% - 1206px) / 2);
 }
 
+@media all and (max-width: 769px) {
+  #interesting_facts .slider_wrap {
+    margin-left: auto;
+  }
+}
+
 #interesting_facts .interesting_carousel .one_slied {
   padding: 30px;
   display: block;
@@ -2568,6 +2574,12 @@ footer .bottom a + a {
   color: #1f1e1c;
   width: 310px;
   margin-bottom: 125px;
+}
+
+@media all and (max-width: 769px) {
+  #main_contacts h2 {
+    margin-top: 150px;
+  }
 }
 
 #main_contacts .map_contacts {

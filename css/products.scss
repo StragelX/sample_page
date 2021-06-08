@@ -365,6 +365,11 @@
     flex-wrap: wrap;
     justify-content: flex-end;
 
+    @media all and (max-width: 769px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     &:before {
       content: "";
       display: block;
@@ -389,6 +394,10 @@
     width: 70%;
     padding-bottom: 20px;
     display: flex;
+
+    @media all and (max-width: 769px) {
+      width: 100%;
+    }
 
     & + .line {
       padding-top: 20px;
