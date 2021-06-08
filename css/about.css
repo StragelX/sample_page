@@ -29,6 +29,12 @@
   padding: 35px 102px 65px 80px;
 }
 
+@media all and (max-width: 769px) {
+  #about_top .top_info {
+    width: 100%;
+  }
+}
+
 #about_top .top_info:before {
   content: "";
   display: block;
@@ -82,10 +88,22 @@
   line-height: 27px;
 }
 
+@media all and (max-width: 769px) {
+  #about_top .top_info .text {
+    max-width: 100%;
+  }
+}
+
 #your_heppines {
   padding-top: 320px;
   padding-bottom: 75px;
   background: url("../img/cow_bg.svg") no-repeat top 800px right -100px;
+}
+
+@media all and (max-width: 769px) {
+  #your_heppines {
+    padding-top: 150px;
+  }
 }
 
 #your_heppines .img_wrap {
@@ -100,11 +118,26 @@
   width: 565px;
 }
 
+@media all and (max-width: 769px) {
+  #your_heppines .about_heppines_1 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 #your_heppines .about_heppines_2 {
   float: right;
   margin-top: -160px;
   width: 452px;
   margin-bottom: 100px;
+}
+
+@media all and (max-width: 769px) {
+  #your_heppines .about_heppines_2 {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 #your_heppines .we_work {
@@ -141,6 +174,11 @@
 #your_heppines .one_benefit h4 {
   margin-bottom: 10px;
   color: #931d24;
+}
+
+#your_heppines .info_block {
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 #about_conters {
@@ -307,6 +345,13 @@
   width: 85px;
   height: 85px;
   background: url("../img/stamp.svg") no-repeat center/contain;
+}
+
+@media all and (max-width: 769px) {
+  #we_are_trying .info_block {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 #we_are_trying .owl-item {

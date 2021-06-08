@@ -2536,6 +2536,7 @@ footer .bottom a + a {
 @media all and (max-width: 1025px) {
   #main_contacts {
     padding-top: 0;
+    max-height: none;
   }
 }
 
@@ -2554,6 +2555,12 @@ footer .bottom a + a {
     width: 100%;
     height: 500px;
     margin-bottom: 75px;
+  }
+}
+
+@media all and (max-width: 770px) {
+  #main_contacts #map {
+    margin-bottom: 0;
   }
 }
 
@@ -2751,6 +2758,13 @@ footer .bottom a + a {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
   background-color: #ffffff;
   padding: 100px;
+}
+
+@media all and (max-width: 769px) {
+  #policy .inner,
+  .article .inner {
+    padding: 100px 50px;
+  }
 }
 
 #policy .inner .text a,
