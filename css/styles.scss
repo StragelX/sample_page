@@ -1027,6 +1027,12 @@ footer {
       width: 300px;
     }
 
+    &:not(.checkboxes) {
+      label {
+        pointer-events: none;
+      }
+    }
+
     label {
       position: absolute;
       left: 15px;

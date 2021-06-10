@@ -2265,6 +2265,10 @@ footer img.m_hide + * {
   }
 }
 
+.modal_overlay .input_wrap:not(.checkboxes) label {
+  pointer-events: none;
+}
+
 .modal_overlay .input_wrap label {
   position: absolute;
   left: 15px;
