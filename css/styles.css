@@ -1265,6 +1265,10 @@ body.no_scroll > *:not(.modal_overlay):not(.mob_menu) {
   filter: blur(5px);
 }
 
+.wsnw {
+  white-space: nowrap;
+}
+
 h1 {
   font-family: "Roboto Slab";
   font-weight: 500;
@@ -1925,17 +1929,18 @@ footer .bottom a + a {
   }
 }
 
-footer img.m_hide {
-  display: inline-block;
-  margin-left: 42px;
-  margin-right: 17px;
-}
-
-footer img.m_hide + * {
-  display: inline-block;
-  width: calc(100% - 90px);
-  vertical-align: top;
-  margin-bottom: 50px;
+@media all and (max-width: 767px) {
+  footer img.m_hide {
+    display: inline-block;
+    margin-left: 42px;
+    margin-right: 17px;
+  }
+  footer img.m_hide + * {
+    display: inline-block;
+    width: calc(100% - 90px);
+    vertical-align: top;
+    margin-bottom: 50px;
+  }
 }
 
 .cookies_wrap {

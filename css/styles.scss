@@ -30,6 +30,10 @@ body {
   }
 }
 
+.wsnw {
+  white-space: nowrap;
+}
+
 h1 {
   font-family: "Roboto Slab";
   font-weight: 500;
@@ -689,16 +693,18 @@ footer {
     }
   }
 
-  img.m_hide {
-    display: inline-block;
-    margin-left: 42px;
-    margin-right: 17px;
-
-    & + * {
+  @media all and (max-width: 767px) {
+    img.m_hide {
       display: inline-block;
-      width: calc(100% - 90px);
-      vertical-align: top;
-      margin-bottom: 50px;
+      margin-left: 42px;
+      margin-right: 17px;
+  
+      & + * {
+        display: inline-block;
+        width: calc(100% - 90px);
+        vertical-align: top;
+        margin-bottom: 50px;
+      }
     }
   }
 }
