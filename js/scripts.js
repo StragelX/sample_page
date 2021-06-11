@@ -159,7 +159,8 @@ $( document ).ready(function() {
                     margin: 30,
                 },
                 1100:{
-                    items: 1.2
+                    items: 1.2,
+                    margin: 30
                 }
             }
         });

@@ -2024,12 +2024,6 @@ footer .bottom a + a {
   width: 320px;
 }
 
-@media all and (max-width: 769px) {
-  .modal_overlay .input_wrap {
-    width: 300px;
-  }
-}
-
 .modal_overlay .input_wrap:not(.checkboxes) label {
   pointer-events: none;
 }

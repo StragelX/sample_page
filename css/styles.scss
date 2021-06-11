@@ -811,10 +811,6 @@ footer {
   .input_wrap {
     width: 320px;
 
-    @media all and (max-width: 769px) {
-      width: 300px;
-    }
-
     &:not(.checkboxes) {
       label {
         pointer-events: none;
