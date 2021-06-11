@@ -71,7 +71,7 @@ $( document ).ready(function() {
         });
     }
 
-    if ( $('.with_low_carousel.owl-carousel') ) {
+    if ( $('.with_low_carousel.owl-carousel') && $( document ).width() > 770 ) {
         $(".with_low_carousel.owl-carousel").owlCarousel({
             margin: 10,
             loop: true,
@@ -93,7 +93,7 @@ $( document ).ready(function() {
         });
     }
 
-    if ( $('.interesting_carousel.owl-carousel') ) {
+    if ( $('.interesting_carousel.owl-carousel') && $( document ).width() > 770 ) {
         $(".interesting_carousel.owl-carousel").owlCarousel({
             margin: 25,
             loop: true,
@@ -130,9 +130,10 @@ $( document ).ready(function() {
 
             responsive:{
                 0:{
+                    items: 1
                 },
                 700:{
-                    items: 3,
+                    items: 3
                 },
                 1000:{
                     items: 4
@@ -166,6 +167,10 @@ $( document ).ready(function() {
         });
     }
 
+    $('.call_mob_menu').click(function(){
+        $('.mob_menu').toggleClass('active');
+        $('body').toggleClass('no_scroll');
+    })
 
     if ( $('.fixed_left') ) {
         $(window).scroll(function(){

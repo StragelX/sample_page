@@ -9,6 +9,13 @@
   justify-content: center;
 }
 
+@media all and (max-width: 767px) {
+  #about_top {
+    margin-top: 105px;
+    height: 370px;
+  }
+}
+
 #about_top::before {
   content: "";
   position: absolute;
@@ -27,6 +34,12 @@
   top: 71%;
   background-color: #af7a56;
   padding: 35px 102px 65px 80px;
+}
+
+@media all and (max-width: 767px) {
+  #about_top .top_info {
+    top: 370px;
+  }
 }
 
 @media all and (max-width: 769px) {

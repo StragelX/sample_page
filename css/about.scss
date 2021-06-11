@@ -10,6 +10,11 @@
   align-items: center;
   justify-content: center;
 
+  @media all and (max-width: 767px) {
+    margin-top: 105px;
+    height: 370px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -28,6 +33,10 @@
     top: 71%;
     background-color: $lightn_brown;
     padding: 35px 102px 65px 80px;
+
+    @media all and (max-width: 767px) {
+      top: 370px;
+    }
 
     @media all and (max-width: 769px) {
       width: 100%;
