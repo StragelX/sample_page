@@ -497,10 +497,6 @@ header {
 main {
   flex: 1 1 auto;
   min-height: auto;
-
-  @media all and (max-width: 767px) {
-    background: #fff url('../img/mob_mneu_bg.svg') no-repeat top 130px center/160%;
-  }
 }
 
 footer {
@@ -1885,8 +1881,6 @@ footer {
 
     @media all and (max-width: 767px) {
       font-size: 36px;
-      line-height: 38px;
-      letter-spacing: 0.5px;
     }
 
     &.cookies_header {
@@ -2252,6 +2246,10 @@ footer {
 #sitemap {
   padding-top: 150px;
   padding-bottom: 200px;
+
+  @media all and (max-width: 767px) {
+    background: #fff url(../img/mob_mneu_bg.svg) no-repeat center/160%;
+  }
 
   h1 {
     color: #de8e51;

@@ -240,6 +240,7 @@
     margin-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 130px;
   }
 }
 
@@ -349,12 +350,33 @@
   background-color: #ffffff;
 }
 
+@media all and (max-width: 767px) {
+  #interesting_facts {
+    background-color: #1f1e1c;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    z-index: 2;
+  }
+}
+
 #interesting_facts:before {
   background-image: linear-gradient(135deg, transparent 66%, #fff 67%), linear-gradient(45deg, #fff 33%, transparent 34%, transparent 44%);
 }
 
+@media all and (max-width: 767px) {
+  #interesting_facts:before {
+    background-image: linear-gradient(135deg, transparent 66%, #1f1e1c 67%), linear-gradient(45deg, #1f1e1c 33%, transparent 34%, transparent 44%);
+  }
+}
+
 #interesting_facts:after {
   background-image: linear-gradient(135deg, #fff 33%, transparent 34%, transparent 44%), linear-gradient(45deg, transparent 66%, #fff 67%);
+}
+
+@media all and (max-width: 767px) {
+  #interesting_facts:after {
+    background-image: linear-gradient(135deg, #1f1e1c 33%, transparent 34%, transparent 44%), linear-gradient(45deg, transparent 66%, #1f1e1c 67%);
+  }
 }
 
 #interesting_facts h2 {
@@ -365,6 +387,7 @@
 @media all and (max-width: 767px) {
   #interesting_facts h2 {
     width: 315px;
+    color: #fff;
   }
 }
 

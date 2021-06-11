@@ -497,10 +497,6 @@ header {
 main {
   flex: 1 1 auto;
   min-height: auto;
-
-  @media all and (max-width: 767px) {
-    background: #fff url('../img/mob_mneu_bg.svg') no-repeat top 130px center/160%;
-  }
 }
 
 footer {
@@ -1883,12 +1879,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
 
-    @media all and (max-width: 767px) {
-      font-size: 36px;
-      line-height: 38px;
-      letter-spacing: 0.5px;
-    }
-
     &.cookies_header {
       max-width: 100%;
     }
@@ -2263,10 +2253,6 @@ footer {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
-
-    @media all and (max-width: 767px) {
-      font-size: 36px;
-    }
   }
 
   .icons {
@@ -2313,10 +2299,6 @@ footer {
   justify-content: center;
   flex-direction: column;
 
-  @media all and (max-width: 767px) {
-    background: #2d2c2c url("../img/eror_bg.svg") no-repeat top 10% center / 80%;
-  }
-
   .icons {
     margin-bottom: 15px;
   }
@@ -2325,11 +2307,6 @@ footer {
     display: block;
     color: #fff;
     margin-bottom: 10px;
-
-    @media all and (max-width: 767px) {
-      text-align: center;
-      margin-bottom: 45px;
-    }
   }
 
   .text {
