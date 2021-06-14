@@ -288,13 +288,6 @@
       padding-left: 30px;
     }
 
-    @media all and (max-width: 767px) {
-      width: 100%;
-      padding-top: 50px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-
     h1 {
       color: #de8e51;
       font-family: "Roboto Slab";
@@ -396,12 +389,6 @@
       padding-right: 30px;
     }
 
-    @media all and (max-width: 767px) {
-      margin-top: 100px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
     &:before {
       content: "";
       display: block;
@@ -418,31 +405,6 @@
       background-repeat: repeat-x;
       background-image: linear-gradient(135deg, transparent 66%, $rad 67%),
         linear-gradient(45deg, $rad 33%, transparent 34%, transparent 44%);
-    }
-
-    @media all and (max-width: 767px) {
-      &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 10px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        bottom: auto;
-        z-index: 0;
-        background-position: -8px 0;
-        background-size: 15px 100%;
-        background-repeat: repeat-x;
-        background-image: linear-gradient(
-            135deg,
-            $rad 33%,
-            transparent 34%,
-            transparent 44%
-          ),
-          linear-gradient(45deg, transparent 66%, $rad 67%);
-      }
     }
   }
 
@@ -469,11 +431,6 @@
       font-weight: 500;
       letter-spacing: 1.4px;
       text-transform: uppercase;
-
-      @media all and (max-width: 767px) {
-        font-size: 12px;
-        line-height: 27px;
-      }
     }
 
     p {
@@ -483,10 +440,6 @@
       font-weight: 300;
       letter-spacing: 0.7px;
       line-height: 27px;
-
-      @media all and (max-width: 767px) {
-        white-space: nowrap;
-      }
     }
   }
 }
@@ -597,23 +550,5 @@
     margin-top: 75px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.link_back {
-  display: block;
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  color: #1f1e1c;
-  font-family: "Roboto Slab";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1.4px;
-  text-decoration: underline;
-  text-transform: uppercase;
-
-  svg {
-    height: 10px;
   }
 }

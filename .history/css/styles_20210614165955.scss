@@ -1327,10 +1327,6 @@ footer {
 
     &.article_head {
       width: 445px;
-
-      @media all and (max-width: 767px) {
-        width: 321px;
-      }
     }
   }
 
@@ -1878,10 +1874,6 @@ footer {
   padding-top: 160px;
   padding-bottom: 160px;
 
-  @media all and (max-width: 767px) {
-    padding-bottom: 100px;
-  }
-
   h1 {
     margin-bottom: 20px;
     color: #de8e51;
@@ -2186,7 +2178,7 @@ footer {
           width: calc(100% + 30px);
           height: 375px;
           margin-left: -15px;
-          max-width: calc(100% + 30px);
+          max-width: ;
         }
 
         & + .img_wrap {
@@ -2242,12 +2234,6 @@ footer {
       font-size: 25px;
       font-weight: 500;
 
-      @media all and (max-width: 767px) {
-        margin-top: 50px;
-        padding-left: 45px;
-        padding-right: 15px;
-      }
-
       &::before {
         content: "";
         display: block;
@@ -2257,10 +2243,6 @@ footer {
         width: 41px;
         height: 29px;
         background: url("../img/quote.svg") no-repeat center / contain;
-
-        @media all and (max-width: 767px) {
-          width: 25px;
-        }
       }
     }
   }
@@ -2278,10 +2260,6 @@ footer {
       text-transform: uppercase;
       margin-bottom: 20px;
       display: block;
-
-      @media all and (max-width: 767px) {
-        font-size: 14px;
-      }
     }
 
     a {

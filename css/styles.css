@@ -1295,6 +1295,12 @@ h3 {
   text-transform: uppercase;
 }
 
+@media all and (max-width: 767px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
 h4 {
   font-family: "Roboto Slab";
   font-weight: 500;
@@ -2546,6 +2552,12 @@ footer .bottom a + a {
   width: 445px;
 }
 
+@media all and (max-width: 767px) {
+  #interesting_facts h2.article_head {
+    width: 321px;
+  }
+}
+
 #interesting_facts .link {
   color: #ffffff;
   font-family: "Roboto Slab";
@@ -3092,6 +3104,13 @@ footer .bottom a + a {
   padding-bottom: 160px;
 }
 
+@media all and (max-width: 767px) {
+  #policy,
+  .article {
+    padding-bottom: 100px;
+  }
+}
+
 #policy h1,
 .article h1 {
   margin-bottom: 20px;
@@ -3141,6 +3160,14 @@ footer .bottom a + a {
   #policy .inner,
   .article .inner {
     padding: 100px 50px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #policy .inner,
+  .article .inner {
+    box-shadow: none;
+    padding: 0;
   }
 }
 
@@ -3223,6 +3250,13 @@ footer .bottom a + a {
   margin-bottom: 30px;
 }
 
+@media all and (max-width: 767px) {
+  #policy .inner h3,
+  .article .inner h3 {
+    font-size: 25px;
+  }
+}
+
 #policy .inner h2,
 .article .inner h2 {
   color: #1f1e1c;
@@ -3235,6 +3269,14 @@ footer .bottom a + a {
   margin-bottom: 20px;
 }
 
+@media all and (max-width: 767px) {
+  #policy .inner h2,
+  .article .inner h2 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+}
+
 #policy .inner strong,
 .article .inner strong {
   color: #1f1e1c;
@@ -3244,10 +3286,6 @@ footer .bottom a + a {
   font-style: normal;
   letter-spacing: 0.7px;
   line-height: 27px;
-  text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 #policy .inner ul,
@@ -3422,6 +3460,16 @@ footer .bottom a + a {
   max-width: calc((100% / 2) - 30px);
 }
 
+@media all and (max-width: 767px) {
+  #policy .inner .small_imgs .img_wrap,
+  .article .inner .small_imgs .img_wrap {
+    width: calc(100% + 30px);
+    height: 375px;
+    margin-left: -15px;
+    max-width: calc(100% + 30px);
+  }
+}
+
 #policy .inner .small_imgs .img_wrap + .img_wrap,
 .article .inner .small_imgs .img_wrap + .img_wrap {
   margin-left: 30px;
@@ -3432,6 +3480,15 @@ footer .bottom a + a {
   height: 500px;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+@media all and (max-width: 767px) {
+  #policy .inner .big,
+  .article .inner .big {
+    height: 375px;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+  }
 }
 
 #policy .inner .big.video:before,
@@ -3471,6 +3528,15 @@ footer .bottom a + a {
   font-weight: 500;
 }
 
+@media all and (max-width: 767px) {
+  #policy .inner blockquote,
+  .article .inner blockquote {
+    margin-top: 50px;
+    padding-left: 45px;
+    padding-right: 15px;
+  }
+}
+
 #policy .inner blockquote::before,
 .article .inner blockquote::before {
   content: "";
@@ -3481,6 +3547,13 @@ footer .bottom a + a {
   width: 41px;
   height: 29px;
   background: url("../img/quote.svg") no-repeat center/contain;
+}
+
+@media all and (max-width: 767px) {
+  #policy .inner blockquote::before,
+  .article .inner blockquote::before {
+    width: 25px;
+  }
 }
 
 #policy .share_article,
@@ -3499,6 +3572,13 @@ footer .bottom a + a {
   text-transform: uppercase;
   margin-bottom: 20px;
   display: block;
+}
+
+@media all and (max-width: 767px) {
+  #policy .share_article p,
+  .article .share_article p {
+    font-size: 14px;
+  }
 }
 
 #policy .share_article a,

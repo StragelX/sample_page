@@ -213,10 +213,22 @@
   align-items: flex-start;
 }
 
+@media all and (max-width: 767px) {
+  #your_heppines .one_benefit {
+    margin-bottom: 25px;
+  }
+}
+
 #your_heppines .one_benefit img {
   flex: none;
   margin-right: 30px;
   margin-top: -10px;
+}
+
+@media all and (max-width: 767px) {
+  #your_heppines .one_benefit img {
+    margin-right: 10px;
+  }
 }
 
 #your_heppines .one_benefit h4 {
