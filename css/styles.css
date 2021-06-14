@@ -1427,6 +1427,12 @@ h4 {
   justify-content: center;
 }
 
+@media all and (max-width: 767px) {
+  .pagination {
+    justify-content: space-between;
+  }
+}
+
 .pagination .arrow {
   width: 26px;
   height: 26px;
@@ -1437,9 +1443,21 @@ h4 {
   margin-right: 60px;
 }
 
+@media all and (max-width: 767px) {
+  .pagination .arrow.prew {
+    margin-right: auto;
+  }
+}
+
 .pagination .arrow.next {
   margin-left: 60px;
   transform: rotate(180deg);
+}
+
+@media all and (max-width: 767px) {
+  .pagination .arrow.next {
+    margin-left: auto;
+  }
 }
 
 .pagination .page {
@@ -1453,6 +1471,13 @@ h4 {
   margin-right: 13px;
   transition: color 180ms;
   padding: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .pagination .page {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .pagination .page.active, .pagination .page:hover {
@@ -3066,8 +3091,24 @@ footer .bottom a + a {
   margin-top: 80px;
 }
 
+@media all and (max-width: 767px) {
+  #main_contacts.contact_page h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
 #main_contacts.contact_page .contacts_img {
   margin-bottom: 130px;
+}
+
+@media all and (max-width: 767px) {
+  #main_contacts.contact_page .contacts_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+  }
 }
 
 #main_contacts .mob_stuff {
