@@ -582,34 +582,6 @@ header {
       }
     }
   }
-
-  .inner {
-    a {
-      display: flex;
-      align-items: center;
-      color: $yellow;
-      font-family: "Roboto Slab";
-      font-size: 14px;
-      font-weight: 500;
-      font-style: normal;
-      letter-spacing: 1.4px;
-      line-height: 15px;
-      text-transform: uppercase;
-
-      &:first-child {
-        padding-top: 20px;
-      }
-
-      img {
-        height: 24px;
-        margin-right: 10px;
-      }
-
-      & + a {
-        margin-top: 15px;
-      }
-    }
-  }
 }
 
 main {

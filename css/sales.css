@@ -23,8 +23,12 @@
 
 #production_top .production_switcher {
   border-bottom: 1px solid #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 150px;
 }
 
@@ -35,8 +39,11 @@
 }
 
 #production_top .production_switcher a {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom 180ms;
   transition: border-bottom 180ms;
   color: #1f1e1c;
   font-family: "Roboto Slab";
@@ -53,6 +60,7 @@
 
 #production_top .production_switcher a.active, #production_top .production_switcher a:hover {
   border-bottom: 3px solid #b41f28;
+  -webkit-transition: border-bottom 180ms;
   transition: border-bottom 180ms;
 }
 
@@ -75,7 +83,8 @@
 #production_top .img_wrap {
   padding-top: 7px;
   padding-bottom: 7px;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
   background-color: #ffffff;
 }
 
@@ -83,7 +92,8 @@
   #production_top .img_wrap {
     padding-top: 0;
     padding-bottom: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -196,7 +206,8 @@
   background-size: 17px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(135deg, transparent 66%, #fff 67%), linear-gradient(45deg, #fff 33%, transparent 34%, transparent 44%);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #shops:before {
@@ -214,7 +225,8 @@
   background-size: 17px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(135deg, #fff 33%, transparent 34%, transparent 44%), linear-gradient(45deg, transparent 66%, #fff 67%);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #shops #map {
@@ -239,9 +251,15 @@
 }
 
 #shops .shops_list .shop_group .top_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   color: #f9a46a;
   font-family: "Roboto Slab";
@@ -257,30 +275,45 @@
   width: 26px;
   height: 26px;
   background: url("../img/up_arrow.svg") no-repeat center/contain;
-  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
   opacity: 1;
   margin-top: 3px;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transform-style: preserve-3d;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 #shops .shops_list .shop_group .top_line:hover:after {
   opacity: 0.7;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transform-style: preserve-3d;
-  transform: rotateX(180deg);
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 #shops .shops_list .shop_group .list {
   overflow: hidden;
   max-height: 0;
+  -webkit-transition: max-height 360ms;
   transition: max-height 360ms;
 }
 
 #shops .shops_list .shop_group .line {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 12px;
@@ -299,17 +332,26 @@
 }
 
 #shops .shops_list .shop_group.active .top_line:after {
-  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 #shops .shops_list .shop_group.active .top_line:hover:after {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transform: rotateX(0deg);
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 
 #shops .shops_list .shop_group.active .list {
   max-height: 1000px;
+  -webkit-transition: max-height 360ms;
   transition: max-height 360ms;
 }
 
@@ -364,8 +406,10 @@
 }
 
 #our_sales .sales {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
 @media all and (max-width: 1025px) {
@@ -376,14 +420,17 @@
 
 @media all and (max-width: 767px) {
   #our_sales .sales {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
 #our_sales .sales img {
   height: 60px;
   min-width: 96px;
-  flex: 1 1 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   margin-bottom: 15px;
 }
 
@@ -419,7 +466,8 @@
 }
 
 #hurt_rozdrib .img_wrap {
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.22);
   background-color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -435,7 +483,8 @@
   #hurt_rozdrib .img_wrap {
     padding-top: 0;
     padding-bottom: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -444,9 +493,16 @@
   margin-right: 50px;
   max-width: 550px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media all and (max-width: 1025px) {
