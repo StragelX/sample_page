@@ -535,14 +535,6 @@ header {
     opacity: 1;
     pointer-events: all;
     transition: opacity 360ms;
-
-    & ~ header {
-      filter: blur(0) !important;
-    }
-
-    & ~ .order_product {
-      display: none;
-    }
   }
 
   .title_line {

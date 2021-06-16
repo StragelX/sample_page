@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-    
-
     $('.shop_group .top_line').click(function(){
         $(this).closest('.shop_group').toggleClass('active');
     })
@@ -8,7 +6,7 @@ $( document ).ready(function() {
     var agrotem_cookies = localStorage.getItem('agrotem_cookies');
 
     if (agrotem_cookies != 'checked') {
-        $(".cookies_wrap").addClass('active');
+      $(".cookies_wrap").addClass('active');
     }
 
     $('.cookies_wrap .ok').click(function(){
@@ -172,11 +170,6 @@ $( document ).ready(function() {
     $('.call_mob_menu').click(function(){
         $('.mob_menu').toggleClass('active');
         $('body').toggleClass('no_scroll');
-        $('.product_menu').removeClass('active');
-
-        if ( $('body.no_scroll') ) {
-            $('body').removeClass('no_scroll');
-        }
     })
 
     if ( $('.fixed_left') && $( document ).width() > 770 ) {
@@ -386,19 +379,12 @@ $( document ).ready(function() {
         }
     }
 
-    $('.product_menu .group, .mobile_products_process .group').click(function(){
+    $('.product_menu .group').click(function(){
         $(this).toggleClass('open');
         $(this).find('.inner').slideDown(500);
         $(this).siblings('.group.open').each(function(){
             $(this).find('.inner').slideUp(500);
         })
         $(this).siblings('.group').removeClass('open');
-    })
-
-    $('.call_prod_menu').click(function(e) {
-        e.preventDefault();
-        $('body').addClass('no_scroll');
-        $('.product_menu').addClass('active');
-        $('.mob_menu').removeClass('active');
     })
 });

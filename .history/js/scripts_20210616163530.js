@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-    
-
     $('.shop_group .top_line').click(function(){
         $(this).closest('.shop_group').toggleClass('active');
     })
@@ -8,7 +6,7 @@ $( document ).ready(function() {
     var agrotem_cookies = localStorage.getItem('agrotem_cookies');
 
     if (agrotem_cookies != 'checked') {
-        $(".cookies_wrap").addClass('active');
+      $(".cookies_wrap").addClass('active');
     }
 
     $('.cookies_wrap .ok').click(function(){

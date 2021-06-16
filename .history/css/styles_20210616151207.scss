@@ -24,7 +24,7 @@ body {
   &.no_scroll {
     overflow: hidden;
 
-    & > *:not(.modal_overlay):not(.mob_menu):not(.product_menu) {
+    & > *:not(.modal_overlay):not(.mob_menu) {
       filter: blur(5px);
     }
   }
@@ -528,22 +528,7 @@ header {
   padding-right: 40px;
   overflow: auto;
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 360ms;
-
-  &.active {
-    opacity: 1;
-    pointer-events: all;
-    transition: opacity 360ms;
-
-    & ~ header {
-      filter: blur(0) !important;
-    }
-
-    & ~ .order_product {
-      display: none;
-    }
-  }
+  poiun
 
   .title_line {
     display: flex;

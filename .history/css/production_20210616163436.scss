@@ -316,122 +316,72 @@
       transform: rotate(180deg);
     }
   }
+}
 
-  .mobile_products_process {
-    margin-bottom: 50px;
-    counter-reset: process;
-    margin-left: -15px;
-    width: calc(100% + 30px);
+.mobile_products_process {
+  margin-bottom: 50px;
+  counter-reset: process;
 
-    .group {
-      padding-top: 7px;
-      padding-bottom: 7px;
-      counter-increment: process;
+  .group {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    counter-increment: process;
 
-      &:before {
-        content: counter(process);
-        color: $yellow;
-        font-family: Montserrat;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.6px;
-        line-height: 14px;
+    &:before {
+      content: counter(process);
+      color: $yellow;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      line-height: 14px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .group_title {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: $dark;
+        font-family: "Roboto Slab";
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 1.25px;
+        text-transform: uppercase;
+      }
+
+      &::after {
+        content: "";
         display: block;
-        margin-bottom: 5px;
-        padding-left: 15px;
+        width: 15px;
+        height: 15px;
+        flex: none;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        transform: rotate(0);
+        transition: transform 360ms;
+        background: url("../img/arrow_down_dark.svg") no-repeat center / contain;
       }
+    }
 
+    .inner {
+    }
+
+    &.open {
       .group_title {
-        padding-left: 15px;
-        padding-right: 15px;
-        display: flex;
-        justify-content: space-between;
-
-        p {
-          color: $dark;
-          font-family: "Roboto Slab";
-          font-size: 25px;
-          font-weight: 500;
-          letter-spacing: 1.25px;
-          text-transform: uppercase;
-        }
-
         &::after {
-          content: "";
-          display: block;
-          width: 15px;
-          height: 15px;
-          flex: none;
-          margin-top: 10px;
-          margin-right: 10px;
-          margin-left: 10px;
-          transform: rotate(0);
+          transform: rotate(180deg);
           transition: transform 360ms;
-          background: url("../img/arrow_down_dark.svg") no-repeat center /
-            contain;
         }
       }
+    }
 
-      .inner {
-        padding-top: 10px;
-        padding-bottom: 50px;
-
-        .img_wrap {
-          padding-top: 0;
-          padding-bottom: 0;
-          box-shadow: none;
-          height: 275px;
-          margin-left: 0;
-          width: 100%;
-        }
-
-        .info {
-          background-color: $rad;
-          padding: 30px 15px;
-          width: 100%;
-
-          &:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 10px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            bottom: auto;
-            z-index: 0;
-            background-position: -8px 0;
-            background-size: 15px 100%;
-            background-repeat: repeat-x;
-            background-image: linear-gradient(
-                135deg,
-                $rad 33%,
-                transparent 34%,
-                transparent 44%
-              ),
-              linear-gradient(45deg, transparent 66%, $rad 67%);
-          }
-        }
-      }
-
-      &.open {
-        .group_title {
-          &::after {
-            transform: rotate(180deg);
-            transition: transform 360ms;
-          }
-        }
-      }
-
-      & + .group {
-        padding-top: 20px;
-        border-top: 1px dotted $dark_rad;
-      }
-
-      &:last-child {
-        border-bottom: 1px dotted $dark_rad;
-      }
+    & + .group {
+      padding-top: 20px;
+      border-top: 1px dotted $dark_rad;
     }
   }
 }

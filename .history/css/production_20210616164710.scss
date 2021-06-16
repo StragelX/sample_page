@@ -320,8 +320,6 @@
   .mobile_products_process {
     margin-bottom: 50px;
     counter-reset: process;
-    margin-left: -15px;
-    width: calc(100% + 30px);
 
     .group {
       padding-top: 7px;
@@ -338,12 +336,9 @@
         line-height: 14px;
         display: block;
         margin-bottom: 5px;
-        padding-left: 15px;
       }
 
       .group_title {
-        padding-left: 15px;
-        padding-right: 15px;
         display: flex;
         justify-content: space-between;
 
@@ -381,14 +376,15 @@
           padding-bottom: 0;
           box-shadow: none;
           height: 275px;
-          margin-left: 0;
-          width: 100%;
+          margin-left: -15px;
+          width: calc(100% + 30px);
         }
 
         .info {
           background-color: $rad;
           padding: 30px 15px;
-          width: 100%;
+          margin-left: -15px;
+          width: calc(100% + 30px);
 
           &:after {
             content: "";
@@ -427,10 +423,6 @@
       & + .group {
         padding-top: 20px;
         border-top: 1px dotted $dark_rad;
-      }
-
-      &:last-child {
-        border-bottom: 1px dotted $dark_rad;
       }
     }
   }

@@ -39,6 +39,11 @@ $( document ).ready(function() {
         $(this).closest('.modal_overlay').removeClass('active');
         $(this).closest('.modal').removeClass('active');
         $('body').removeClass('no_scroll');
+        var player;
+        function onYouTubePlayerAPIReady() {player = new YT.Player('player');}
+        console.log(player)
+        player.stopVideo();
+        
     });
 
     $(".input_wrap input").click(function(){
