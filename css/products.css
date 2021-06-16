@@ -95,6 +95,13 @@
   margin-bottom: 20px;
 }
 
+@media all and (max-width: 767px) {
+  #products_top h1 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+
 #products_top .icons {
   display: block;
   margin-left: auto;
@@ -119,6 +126,12 @@
 @media all and (max-width: 1025px) {
   #products_top .prod_grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #products_top .prod_grid {
+    grid-template-columns: 1fr;
   }
 }
 
