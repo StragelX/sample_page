@@ -427,14 +427,25 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
+  height: 100vh;
   background: $yellow url("../img/mob_mneu_bg.svg") no-repeat center / 160%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   transition: opacity 360ms;
   opacity: 0;
   pointer-events: none;
+
+  .inner {
+    height: 100vh;
+    min-height: 700px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .container + .container {
+      margin-top: 50px;
+    }
+  }
 
   .logo {
     margin-top: 18px;
@@ -1105,6 +1116,10 @@ footer {
     &#order_1 {
       width: 1026px;
       padding: 130px 130px 75px 130px;
+
+      @media all and (max-width: 1400px) {
+        padding: 50px 130px 75px 130px;
+      }
 
       @media all and (max-width: 769px) {
         padding: 50px 30px 50px 30px;
